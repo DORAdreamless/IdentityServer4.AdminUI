@@ -1,19 +1,31 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-   
+    <el-button @click="onTest()">test</el-button>
+    <pre>{{ msg }}</pre>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name: 'HelloWorld',
-  data () {
+  name: "HelloWorld",
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: {}
+    };
+  },
+  methods: {
+    onTest: function() {
+      axios({
+        url: `/api/Configuration/client/create`,
+        method: "POST",
+        data: { ClientId: "abc", ClientName: "abc" }
+      }).then(result => {
+        this.msg = result.data;
+      });
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
