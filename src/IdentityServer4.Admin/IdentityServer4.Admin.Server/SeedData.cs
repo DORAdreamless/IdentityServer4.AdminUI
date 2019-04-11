@@ -27,20 +27,20 @@ namespace IdentityServer4.Admin.Server
 
             {
                 var userMgr = provider.GetRequiredService<UserManager<ApplicationUser>>();
-                var alice = userMgr.FindByNameAsync("alice").Result;
+                var alice = userMgr.FindByNameAsync("admin").Result;
                 if (alice == null)
                 {
                     alice = new ApplicationUser
                     {
-                        UserName = "alice"
+                        UserName = "admin"
                     };
-                    var result = userMgr.CreateAsync(alice, "Pass123$").Result;
+                    var result = userMgr.CreateAsync(alice, "123456").Result;
                     if (!result.Succeeded)
                     {
                         throw new Exception(result.Errors.First().Description);
                     }
 
-                    alice = userMgr.FindByNameAsync("alice").Result;
+                    alice = userMgr.FindByNameAsync("admin").Result;
 
                     result = userMgr.AddClaimsAsync(alice, new Claim[]{
                                 new Claim(JwtClaimTypes.Name, "Alice Smith"),

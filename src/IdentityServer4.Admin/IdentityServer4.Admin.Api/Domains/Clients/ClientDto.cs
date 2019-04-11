@@ -5,8 +5,8 @@ using System.Text;
 
 namespace IdentityServer4.Admin.Api.Domains.Clients
 {
-  
-    public class CreateClientModel
+
+    public class ClientDto
     {
         public string ClientId { get; set; }
 

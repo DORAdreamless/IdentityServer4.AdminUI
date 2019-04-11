@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {
       '/api': {
         // 测试环境
-        target: 'http://localhost:5000',  // 接口域名
+        target: 'http://localhost:5003',  // 接口域名
         changeOrigin: true,  //是否跨域
         pathRewrite: {
             '^/api': '/api'   //需要rewrite重写的,

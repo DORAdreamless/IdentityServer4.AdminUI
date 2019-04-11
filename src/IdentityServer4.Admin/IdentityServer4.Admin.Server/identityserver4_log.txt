@@ -25,3 +25,42 @@
 2019-04-11 22:06:16.553 +08:00 [DBG] Found [] as all scopes in database
 2019-04-11 22:06:25.389 +08:00 [DBG] TaskCanceledException. Exiting.
 2019-04-11 22:06:25.428 +08:00 [DBG] Stopping grant removal
+2019-04-11 22:35:15.248 +08:00 [INF] Starting IdentityServer4 version 2.4.0.0
+2019-04-11 22:35:15.535 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-11 22:35:15.541 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-11 22:35:15.544 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-11 22:35:15.545 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-11 22:35:15.548 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-11 22:35:15.565 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-11 22:35:15.717 +08:00 [DBG] Starting grant removal
+2019-04-11 22:36:39.120 +08:00 [DBG] CORS request made for path: /api/Configuration/client/create from origin: http://127.0.0.1:8080 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-04-11 22:36:39.181 +08:00 [DBG] Login Url: /Account/Login
+2019-04-11 22:36:39.182 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-04-11 22:36:39.197 +08:00 [DBG] Logout Url: /Account/Logout
+2019-04-11 22:36:39.204 +08:00 [DBG] ConsentUrl Url: /consent
+2019-04-11 22:36:39.206 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-04-11 22:36:39.208 +08:00 [DBG] Error Url: /home/error
+2019-04-11 22:36:39.210 +08:00 [DBG] Error Id Parameter: errorId
+2019-04-11 22:36:43.782 +08:00 [DBG] CORS request made for path: /api/Configuration/client/create from origin: http://127.0.0.1:8080 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-04-11 22:38:14.316 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-04-11 22:38:14.330 +08:00 [DBG] Stopping grant removal
+2019-04-11 22:38:41.145 +08:00 [INF] Starting IdentityServer4 version 2.4.0.0
+2019-04-11 22:38:41.407 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-11 22:38:41.411 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-11 22:38:41.413 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-11 22:38:41.414 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-11 22:38:41.416 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-11 22:38:41.419 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-11 22:38:41.562 +08:00 [DBG] Starting grant removal
+2019-04-11 23:17:12.555 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-04-11 23:17:12.579 +08:00 [DBG] Stopping grant removal
+2019-04-11 23:17:22.810 +08:00 [WRN] User c97b3e8e-8320-4753-9838-dfa0706ad0a3 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresLower;PasswordRequiresUpper.
+2019-04-11 23:20:47.651 +08:00 [INF] Starting IdentityServer4 version 2.4.0.0
+2019-04-11 23:20:47.908 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-04-11 23:20:47.913 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-04-11 23:20:47.916 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-04-11 23:20:47.917 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-04-11 23:20:47.918 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-04-11 23:20:47.920 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-04-11 23:20:48.063 +08:00 [DBG] Starting grant removal
+2019-04-12 00:20:49.309 +08:00 [INF] Removing 0 grants
