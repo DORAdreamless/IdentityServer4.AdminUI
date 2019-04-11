@@ -9,11 +9,11 @@ using System.Security.Claims;
 using IdentityModel;
 using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
+using IdentityServer4.Admin.Server.Data;
 using IdentityServer4.Admin.Server.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using IdentityServer4.Admin.AspNetIdentity;
 
 namespace IdentityServer4.Admin.Server
 {
