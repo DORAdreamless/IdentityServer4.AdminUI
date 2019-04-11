@@ -18,6 +18,8 @@ namespace IdentityServer4.Admin.Api
 {
     public static class AdminApiExtensions
     {
+        static Assembly AdminApiAssembly = typeof(AdminApiExtensions).Assembly;
+
         private static bool IsMappingOf<T>(Type type)
         {
             return !type.IsGenericType && typeof(T).IsAssignableFrom(type);
@@ -26,8 +28,8 @@ namespace IdentityServer4.Admin.Api
         private static void ConfigureNhibernate(ref NHibernate.Cfg.Configuration config)
         {
             var mapper = new ModelMapper();
-            var assembly = Assembly.Load("IdentityServer4.Admin.Api");
-            var list = assembly.GetExportedTypes().Where(x => !x.IsAbstract && IsMappingOf<IEntitySqlsMapper>(x));
+            //var assembly = Assembly.Load("IdentityServer4.Admin.Api");
+            var list = AdminApiAssembly.GetExportedTypes().Where(x => !x.IsAbstract && IsMappingOf<IEntitySqlsMapper>(x));
             Console.WriteLine($"--------{list.Count()}-------");
             mapper.AddMappings(list);
             var domainMapping = mapper.CompileMappingForAllExplicitlyAddedEntities();
@@ -47,7 +49,7 @@ namespace IdentityServer4.Admin.Api
             services.AddMvc()
             .AddFluentValidation(fv =>
             {
-                fv.RegisterValidatorsFromAssembly(Assembly.Load("IdentityServer4.Admin.Api"));
+                fv.RegisterValidatorsFromAssembly(AdminApiAssembly);
                 fv.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
                 fv.ImplicitlyValidateChildProperties = true;
             })
@@ -60,7 +62,7 @@ namespace IdentityServer4.Admin.Api
 
         public static void UseAdminApi(this IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
-            loggerFactory.UseAsHibernateLoggerFactory();
+            //loggerFactory.UseAsHibernateLoggerFactory();
 
             var sessionFactory = app.ApplicationServices.GetRequiredService<NHibernate.ISessionFactory>();
             var logger = loggerFactory.CreateLogger("AdminApi");
