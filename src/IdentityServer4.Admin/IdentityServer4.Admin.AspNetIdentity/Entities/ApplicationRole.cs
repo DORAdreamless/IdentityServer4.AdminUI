@@ -3,7 +3,8 @@ using System;
 
 namespace IdentityServer4.Admin.AspNetIdentity
 {
-    public class ApplicationUser : IdentityUser<Guid>
+    public class ApplicationRole : IdentityRole<Guid>
     {
+
     }
 }

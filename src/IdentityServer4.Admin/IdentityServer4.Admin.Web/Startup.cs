@@ -29,20 +29,38 @@ namespace IdentityServer4.Admin.Web
         public void ConfigureServices(IServiceCollection services)
         {
 
-            //services.AddAuthentication("Bearer")
-            //    .AddJwtBearer(options =>
-            //    {
+            services.AddMvcCore()
+                        .AddAuthorization()
+                        .AddJsonFormatters();
 
-            //    });
+            services.AddAuthentication("Bearer")
+     .AddJwtBearer("Bearer", options =>
+     {
+         options.Authority = "http://localhost:5000";
+         options.RequireHttpsMetadata = false;
+
+         options.Audience = "api1";
+     });
+
+            services.AddCors(options =>
+            {
+                // this defines a CORS policy called "default"
+                options.AddPolicy("default", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5003")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
 
             services.AddMvc()
-                
                 .AddFluentValidation(fv=> {
                     fv.RegisterValidatorsFromAssembly(Assembly.Load("IdentityServer4.Admin.Api"));
                     fv.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
                     fv.ImplicitlyValidateChildProperties = true;
                 })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
 
 
             services.AddTransient<IValidatorInterceptor, WebApiValidatorInterceptor>();
@@ -60,8 +78,9 @@ namespace IdentityServer4.Admin.Web
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
-           // app.UseHttpsRedirection();
+            app.UseCors("default");
+            app.UseAuthentication();
+            // app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
