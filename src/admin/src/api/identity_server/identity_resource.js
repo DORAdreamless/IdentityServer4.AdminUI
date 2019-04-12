@@ -4,7 +4,7 @@ import axios from 'axios'
 export const GetIdentityResourceByPage = function (pageParam) {
     return axios({
         url: `${base}/api/IdentityServer/IdentityResource/GetIdentityResourceByPage`,
-        method: 'GET',
+        method: 'POST',
         data: pageParam
     })
 }
