@@ -88,6 +88,18 @@ namespace IdentityServer4.Admin.Server
                 throw new Exception("need to configure key material");
             }
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("default", policy =>
+                {
+                    policy.AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowAnyOrigin()
+                    .AllowCredentials()
+                    .Build();
+                });
+            });
+
             services.AddAuthentication()
                 .AddGoogle(options =>
                 {
@@ -110,7 +122,7 @@ namespace IdentityServer4.Admin.Server
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+            app.UseCors("default");
             app.UseStaticFiles();
             app.UseIdentityServer();
             app.UseMvcWithDefaultRoute();

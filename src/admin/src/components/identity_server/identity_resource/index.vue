@@ -21,7 +21,7 @@
     </el-row>
     <el-table
       ref="singleTable"
-      :data="results.rows"
+      :data="results.list"
       highlight-current-row
       border
       style="width: 100%"
@@ -54,12 +54,12 @@
           <el-tag v-if="!scope.row.ShowInDiscoveryDocument">否</el-tag>
         </template>
       </el-table-column>
-      <el-table-column property="Created" label="创建时间">
+      <!-- <el-table-column property="Created" label="创建时间">
         <template slot-scope="scope">{{scope.row.Created|date}}</template>
       </el-table-column>
       <el-table-column property="Updated" label="修改时间">
         <template slot-scope="scope">{{scope.row.Updated|date}}</template>
-      </el-table-column>
+      </el-table-column>-->
       <el-table-column label="操作">
         <template slot-scope="scope">
           <el-button-group>
@@ -98,7 +98,7 @@ export default {
         keywords: ""
       },
       results: {
-        rows: [],
+        list: [],
         total: 0
       }
     };
@@ -149,7 +149,7 @@ export default {
       let that = this;
       that
         .$confirm(
-          `此操作将永久删除${IdentityResource.Created}, 是否继续?`,
+          `此操作将永久删除${IdentityResource.Name}, 是否继续?`,
           "提示",
           {
             confirmButtonText: "确定",
@@ -160,10 +160,7 @@ export default {
         .then(() => {
           DeleteIdentityResource(IdentityResource.Id).then(function(result) {
             if (result.success) {
-              that.$message({
-                type: "success",
-                message: "操作成功"
-              });
+              that.$notify.success("操作成功。");
               that.getIdentityResourceByPage();
             }
           });

@@ -1,19 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace IdentityServer4.Admin.Api.Infrastructure.UI
 {
-    public class PageResponse<T>
+    public class PageList<T>
     {
-        public PageResponse(IEnumerable<T> list, int total)
+        public PageList(IEnumerable<T> list, int total)
         {
             List = list;
             Total = total;
         }
-
+        [JsonProperty("list")]
         public IEnumerable<T> List { get; set; }
-
+        [JsonProperty("total")]
         public int Total { get; set; }
-
+        [JsonProperty("totalPage")]
         public int TotalPage { get; set; }
     }
 }

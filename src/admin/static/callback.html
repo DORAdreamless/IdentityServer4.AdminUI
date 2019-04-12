@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>111</title>
+    <script src="/static/lib/oidc-client.js"></script>
+    <script>
+        //{ response_mode: "query" }
+        new Oidc.UserManager().signinRedirectCallback().then(function () {
+            window.location = "/";
+        }).catch(function (e) {
+            console.error(e);
+            window.location = "/";
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

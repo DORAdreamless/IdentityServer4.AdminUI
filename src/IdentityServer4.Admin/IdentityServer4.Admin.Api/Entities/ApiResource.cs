@@ -18,7 +18,7 @@ namespace IdentityServer4.Admin.Api.Entities
         public virtual  List<ApiSecret> Secrets { get; set; }
         public virtual  List<ApiScope> Scopes { get; set; }
         public virtual  List<ApiResourceClaim> UserClaims { get; set; }
-        public virtual  List<ApiResourceProperty> Properties { get; set; }
+        public virtual  List<ApiProperty> Properties { get; set; }
         public virtual  DateTime Created { get; set; } = DateTime.UtcNow;
         public virtual  DateTime? Updated { get; set; }
         public virtual  DateTime? LastAccessed { get; set; }

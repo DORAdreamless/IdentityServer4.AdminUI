@@ -6,7 +6,7 @@
 
 namespace IdentityServer4.Admin.Api.Entities
 {
-    public class ApiResourceProperty : Property
+    public class ApiProperty : Property
     {
         public virtual int ApiResourceId { get; set; }
         public virtual ApiResource ApiResource { get; set; }

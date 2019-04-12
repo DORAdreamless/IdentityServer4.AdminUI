@@ -20,7 +20,7 @@ namespace IdentityServer4.Admin.Api.Entities
         public virtual  bool Emphasize { get; set; }
         public virtual  bool ShowInDiscoveryDocument { get; set; } = true;
         public virtual  List<IdentityClaim> UserClaims { get; set; }
-        public virtual  List<IdentityResourceProperty> Properties { get; set; }
+        public virtual  List<IdentityProperty> Properties { get; set; }
         public virtual  DateTime Created { get; set; } = DateTime.UtcNow;
         public virtual  DateTime? Updated { get; set; }
         public virtual  bool NonEditable { get; set; }

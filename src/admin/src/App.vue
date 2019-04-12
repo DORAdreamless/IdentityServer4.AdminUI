@@ -252,11 +252,19 @@ export default {
   created: function() {
     // this.initNewNoticeCount();
   },
-  mounted: function() {
+  mounted() {
     let that = this;
 
-    this.getAdminPermission();
-    this.initUser();
+   // this.getAdminPermission();
+    //this.initUser();
+   var mgr= new UserManager(config);
+   mgr.getUser().then(user=>{
+     if(user){
+       this.UserData=user.profile;
+     }else{
+       mgr.signinRedirect();
+     }
+   })
   }
 };
 </script>

@@ -4,28 +4,22 @@ import axios from 'axios'
 export const GetIdentityResourceByPage = function (pageParam) {
     return axios({
         url: `${base}/api/IdentityServer/IdentityResource/GetIdentityResourceByPage`,
-        method: 'POST',
+        method: 'GET',
         data: pageParam
     })
 }
 
-export const GetOne = function (Id) {
+
+export const GetIdentityResource = function (Id="") {
     return axios({
-        url: `${base}/api/IdentityServer/IdentityResource/GetOne?Id=${Id}`,
+        url: `${base}/api/IdentityServer/IdentityResource/GetIdentityResource?Id=${Id}`,
         method: 'GET'
     })
 }
 
-export const GetOneForEdit = function (Id) {
+export const AddIdentityResource = function (param) {
     return axios({
-        url: `${base}/api/IdentityServer/IdentityResource/GetOneForEdit?Id=${Id}`,
-        method: 'GET'
-    })
-}
-
-export const CreateIdentityResource = function (param) {
-    return axios({
-        url: `${base}/api/IdentityServer/IdentityResource/Put`,
+        url: `${base}/api/IdentityServer/IdentityResource/AddIdentityResource`,
         method: 'POST',
         data: param
     })
@@ -33,7 +27,7 @@ export const CreateIdentityResource = function (param) {
 
 export const UpdateIdentityResource = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/IdentityResource/Post?Id=${Id}`,
+        url: `${base}/api/IdentityServer/IdentityResource/UpdateIdentityResource?Id=${Id}`,
         method: 'POST',
         data: param
     })
@@ -41,7 +35,7 @@ export const UpdateIdentityResource = function (Id, param) {
 
 export const DeleteIdentityResource = function (Id) {
     return axios({
-        url: `${base}/api/IdentityServer/IdentityResource/Delete?Id=${Id}`,
+        url: `${base}/api/IdentityServer/IdentityResource/DeleteIdentityResource?Id=${Id}`,
         method: 'POST'
     })
 }

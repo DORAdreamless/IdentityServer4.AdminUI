@@ -1,5 +1,5 @@
 ﻿using FluentValidation.AspNetCore;
-using IdentityServer4.Admin.Api.Domains.Clients;
+using IdentityServer4.Admin.Api.Dtos.Configuration;
 using IdentityServer4.Admin.Api.Infrastructure.WebApi.Controllers;
 using IdentityServer4.Admin.Api.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -99,5 +99,7 @@ namespace IdentityServer4.Admin.Api.Controllers
             return Success();
         }
         #endregion
+
+
     }
 }

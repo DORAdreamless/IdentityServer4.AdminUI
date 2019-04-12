@@ -113,7 +113,7 @@
             closable
             style="margin-right:10px;"
             @close="onDeleteClaim(claim,index)"
-            v-for="(claim,index) in IdentityResourceModel.IdentityClaims"
+            v-for="(claim,index) in IdentityResourceModel.UserClaims"
             :key="claim"
           >{{claim}}</el-tag>
         </div>
@@ -162,8 +162,8 @@
 <script>
 import util from "../../../common/util";
 import {
-  CreateIdentityResource,
-  GetOneForEdit,
+  AddIdentityResource,
+  GetIdentityResource,
   UpdateIdentityResource
 } from "../../../api/identity_server/identity_resource";
 // import IdentityResourceClaim from "./resource_claim";
@@ -202,7 +202,7 @@ export default {
         Required: false,
         Emphasize: false,
         ShowInDiscoveryDocument: true,
-        IdentityClaims: []
+        UserClaims: []
       },
 
       //Property
@@ -226,14 +226,16 @@ export default {
         if (that.Id) {
           UpdateIdentityResource(that.Id, params).then(function(result) {
             if (result.success) {
+              that.$notify.success('操作成功。');
               that.$router.push({
                 name: "IdentityServerIdentityResource"
               });
             }
           });
         } else {
-          CreateIdentityResource(params).then(function(result) {
+          AddIdentityResource(params).then(function(result) {
             if (result.success) {
+               that.$notify.success('操作成功。');
               that.$router.push({
                 name: "IdentityServerIdentityResource"
               });
@@ -244,10 +246,7 @@ export default {
     },
     getIdentityResourceById: function() {
       let that = this;
-      if (!that.Id) {
-        return;
-      }
-      GetOneForEdit(that.Id).then(function(result) {
+      GetIdentityResource(that.Id).then(function(result) {
         if (result.success) {
           that.IdentityResourceModel = Object.assign(
             that.IdentityResourceModel,
@@ -264,26 +263,19 @@ export default {
       if (
         util.getFromArray(
           this.CommonFormModel.Type.toLowerCase(),
-          this.IdentityResourceModel.IdentityClaims
+          this.IdentityResourceModel.UserClaims
         )
       ) {
         this.$notify.warning(`已经存在${this.CommonFormModel.Type}了。`);
         return;
       }
-      this.IdentityResourceModel.IdentityClaims.push(
+      this.IdentityResourceModel.UserClaims.push(
         this.CommonFormModel.Type.toLowerCase()
       );
       this.CommonFormModel.Type = "";
     },
     onDeleteClaim: function(claim, index) {
-      this.$confirm(`此操作将永久删除${claim}, 是否继续?`, "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
-        type: "warning"
-      }).then(() => {
-        this.IdentityResourceModel.IdentityClaims.splice(index, 1);
-        this.$notify.success("操作成功。");
-      });
+      this.IdentityResourceModel.UserClaims.splice(index, 1);
     },
     //property
     onNewProperty: function() {

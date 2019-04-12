@@ -44,9 +44,17 @@ namespace IdentityServer4.Admin.Api
 
             services.AddHttpContextAccessor();
             services.AddScoped<ClientService>();
-
+            services.AddScoped<IdentityResourceService>();
 
             services.AddMvc()
+                .AddJsonOptions(options =>
+                {
+                    options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+                    options.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+                    //options.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Local;
+                    options.SerializerSettings.DateFormatHandling = Newtonsoft.Json.DateFormatHandling.MicrosoftDateFormat;
+                    options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Include;
+                })
             .AddFluentValidation(fv =>
             {
                 fv.RegisterValidatorsFromAssembly(AdminApiAssembly);

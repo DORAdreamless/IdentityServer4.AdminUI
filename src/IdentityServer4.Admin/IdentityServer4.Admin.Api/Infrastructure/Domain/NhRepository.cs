@@ -29,7 +29,7 @@ namespace IdentityServer4.Admin.Api.Infrastructure.Domain
 
         void Delete(object id);
 
-        PageResponse<T> GetByPage(PageRequest page);
+        PageList<T> GetByPage(PageRequest page);
     }
     public class NhSimpleRepository: IRepository
     {
@@ -75,7 +75,7 @@ namespace IdentityServer4.Admin.Api.Infrastructure.Domain
             throw new NotImplementedException();
         }
 
-        public PageResponse<T> GetByPage(PageRequest page)
+        public PageList<T> GetByPage(PageRequest page)
         {
             var criteria=this.Session.CreateCriteria<T>();
 
@@ -87,7 +87,7 @@ namespace IdentityServer4.Admin.Api.Infrastructure.Domain
                 .SetMaxResults(10)
                 .List<T>();
 
-            return new PageResponse<T>(list, total);
+            return new PageList<T>(list, total);
         }
 
         public void Save(T entity)

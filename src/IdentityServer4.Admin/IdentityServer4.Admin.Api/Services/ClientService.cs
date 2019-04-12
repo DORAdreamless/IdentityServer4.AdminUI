@@ -1,5 +1,4 @@
-﻿using IdentityServer4.Admin.Api.Domains.Clients;
-using IdentityServer4.Admin.Api.Infrastructure;
+﻿using IdentityServer4.Admin.Api.Infrastructure;
 using IdentityServer4.Admin.Api.Infrastructure.FluentValidation;
 using IdentityServer4.Admin.Api.Entities;
 using Microsoft.AspNetCore.Http;
@@ -7,6 +6,8 @@ using NHibernate;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using IdentityServer4.Admin.Api.Dtos.Configuration;
+using IdentityServer4.Admin.Api.Mappers;
 
 namespace IdentityServer4.Admin.Api.Services
 {
