@@ -79,13 +79,17 @@ namespace IdentityServer4.Admin.Api.Infrastructure.Domain
         {
             var criteria=this.Session.CreateCriteria<T>();
 
-            page.Criteria(ref criteria);
+            page.PrepareCriteria(ref criteria);
+            page.PrepareOrder(ref criteria);
 
-           int total= criteria.UniqueResult<int>();
+          
 
            var list= criteria.SetFirstResult(0)
                 .SetMaxResults(10)
                 .List<T>();
+
+             criteria = this.Session.CreateCriteria<T>();
+            int total = criteria.UniqueResult<int>();
 
             return new PageList<T>(list, total);
         }

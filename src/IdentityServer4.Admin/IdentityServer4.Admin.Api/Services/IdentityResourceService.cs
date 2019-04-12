@@ -37,7 +37,7 @@ namespace IdentityServer4.Admin.Api.Services
             {
                 return identityResourceDto;
             }
-            identityResourceDto= identityResource.ToModel();
+            identityResourceDto = identityResource.ToModel();
 
             identityResourceDto.UserClaims =
                 this.Session.CreateCriteria<IdentityClaim>()
@@ -51,15 +51,22 @@ namespace IdentityServer4.Admin.Api.Services
 
         public PageList<IdentityResourceDto> GetIdentityResourceByPage(PageRequest page)
         {
-            var criteria = this.Session.CreateCriteria<IdentityResource>()
-                 .Add(Restrictions.Like("Name", page.Keywords.Trim(), MatchMode.Anywhere));
+            var criteria = this.Session.CreateCriteria<IdentityResource>();
+            page.PrepareCriteria(ref criteria);
+
+            criteria.AddOrder(Order.Asc("Name"));
+            page.PrepareOrder(ref criteria);
 
 
-            var list = criteria.SetFirstResult(page.SetFirstResult())
+            var list = criteria.SetFirstResult(page.GetFirstResult())
                 .SetMaxResults(page.GetMaxResults())
                 .List<IdentityResource>()
                 .ToList()
                 .ToModel();
+
+            criteria = this.Session.CreateCriteria<IdentityResource>();
+            page.PrepareCriteria(ref criteria);
+
             int total = criteria.SetProjection(Projections.RowCount()).UniqueResult<int>();
             return new PageList<IdentityResourceDto>(list, total);
         }
@@ -145,12 +152,12 @@ namespace IdentityServer4.Admin.Api.Services
         #region IdentityResourceProperty
         public List<IdentityPropertyDto> GetIdentityProperties(int identityResourceId)
         {
-           return this.Session.CreateCriteria<IdentityProperty>()
-                 .Add(Restrictions.Eq("IdentityResourceId", identityResourceId))
-                 .AddOrder(Order.Asc("Key"))
-                 .List<IdentityProperty>()
-                 .ToList()
-                 .ToModel();
+            return this.Session.CreateCriteria<IdentityProperty>()
+                  .Add(Restrictions.Eq("IdentityResourceId", identityResourceId))
+                  .AddOrder(Order.Asc("Key"))
+                  .List<IdentityProperty>()
+                  .ToList()
+                  .ToModel();
         }
         public void DeleteIdentityProperty(int id)
         {
@@ -176,7 +183,7 @@ namespace IdentityServer4.Admin.Api.Services
             {
                 var identityProperty = identityPropertyDto.ToEntity();
                 this.Session.Save(identityProperty);
-    
+
                 transaction.Commit();
             }
             catch (Exception ex)
@@ -194,7 +201,7 @@ namespace IdentityServer4.Admin.Api.Services
                 IdentityProperty identityProperty = this.Session.Get<IdentityProperty>(id);
                 identityProperty = identityPropertyDto.ToEntity(identityProperty);
                 this.Session.Update(identityProperty);
-               
+
                 transaction.Commit();
             }
             catch (Exception ex)

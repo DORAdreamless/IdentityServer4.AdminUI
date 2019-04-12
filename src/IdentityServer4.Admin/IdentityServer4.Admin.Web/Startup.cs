@@ -62,7 +62,7 @@ namespace IdentityServer4.Admin.Web
             {
                 options.ConnectionString = Configuration.GetConnectionString("DefaultConnection");
                 options.Driver<NHibernate.Driver.SqlClientDriver>();
-                options.Dialect<NHibernate.Dialect.MsSql2008Dialect>();
+                options.Dialect<NHibernate.Dialect.MsSql2005Dialect>();
                 options.LogSqlInConsole = true;
                 options.LogFormattedSql = true;
                 options.ConnectionReleaseMode = ConnectionReleaseMode.OnClose;
