@@ -26,7 +26,7 @@ namespace IdentityServer4.Admin.Api.Controllers
         [Route("/api/IdentityServer/IdentityResource/GetIdentityResourceByPage")]
         public IActionResult GetIdentityResourceByPage([FromBody]IdentityResourcePageRequest pageRequest)
         {
-            PageList<IdentityResourceDto> data = this.service.GetByPage(pageRequest);
+            PageList<IdentityResourceDto> data = this.service.GetRecordByPage(pageRequest);
             return Success(data);
         }
         [HttpGet]

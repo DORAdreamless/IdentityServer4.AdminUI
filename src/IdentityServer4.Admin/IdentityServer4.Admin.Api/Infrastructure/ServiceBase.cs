@@ -36,7 +36,7 @@ namespace IdentityServer4.Admin.Api.Infrastructure
         {
         }
 
-        public PageList<TDto> GetByPage(PageRequest page)
+        public PageList<TDto> GetRecordByPage(PageRequest page)
         {
             var criteria = this.Session.CreateCriteria<TEntity>();
             page.PrepareCriteria(ref criteria);
