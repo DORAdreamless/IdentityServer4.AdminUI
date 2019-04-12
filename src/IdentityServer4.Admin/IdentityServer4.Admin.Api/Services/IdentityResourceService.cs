@@ -1,4 +1,5 @@
 ﻿using IdentityServer4.Admin.Api.Dtos.Configuration;
+using IdentityServer4.Admin.Api.Dtos.Requests;
 using IdentityServer4.Admin.Api.Entities;
 using IdentityServer4.Admin.Api.Infrastructure;
 using IdentityServer4.Admin.Api.Infrastructure.UI;
@@ -13,7 +14,7 @@ using System.Text;
 
 namespace IdentityServer4.Admin.Api.Services
 {
-    public class IdentityResourceService : ServiceBase
+    public class IdentityResourceService : ServiceBase<IdentityResource, IdentityResourceDto>
     {
         public IdentityResourceService(ISessionFactory sessionFactory, IHttpContextAccessor contextAccessor) : base(sessionFactory, contextAccessor)
         {
@@ -49,27 +50,7 @@ namespace IdentityServer4.Admin.Api.Services
             return identityResourceDto;
         }
 
-        public PageList<IdentityResourceDto> GetIdentityResourceByPage(PageRequest page)
-        {
-            var criteria = this.Session.CreateCriteria<IdentityResource>();
-            page.PrepareCriteria(ref criteria);
-
-            criteria.AddOrder(Order.Asc("Name"));
-            page.PrepareOrder(ref criteria);
-
-
-            var list = criteria.SetFirstResult(page.GetFirstResult())
-                .SetMaxResults(page.GetMaxResults())
-                .List<IdentityResource>()
-                .ToList()
-                .ToModel();
-
-            criteria = this.Session.CreateCriteria<IdentityResource>();
-            page.PrepareCriteria(ref criteria);
-
-            int total = criteria.SetProjection(Projections.RowCount()).UniqueResult<int>();
-            return new PageList<IdentityResourceDto>(list, total);
-        }
+        
 
         public void AddIdentityResource(IdentityResourceDto identityResourceDto)
         {

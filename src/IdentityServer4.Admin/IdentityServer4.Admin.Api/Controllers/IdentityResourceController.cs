@@ -1,4 +1,5 @@
 ﻿using IdentityServer4.Admin.Api.Dtos.Configuration;
+using IdentityServer4.Admin.Api.Dtos.Requests;
 using IdentityServer4.Admin.Api.Infrastructure.UI;
 using IdentityServer4.Admin.Api.Infrastructure.WebApi.Controllers;
 using IdentityServer4.Admin.Api.Services;
@@ -23,9 +24,9 @@ namespace IdentityServer4.Admin.Api.Controllers
 
         [HttpPost]
         [Route("/api/IdentityServer/IdentityResource/GetIdentityResourceByPage")]
-        public IActionResult GetIdentityResourceByPage([FromBody]PageRequest pageRequest)
+        public IActionResult GetIdentityResourceByPage([FromBody]IdentityResourcePageRequest pageRequest)
         {
-            PageList<IdentityResourceDto> data = this.service.GetIdentityResourceByPage(pageRequest);
+            PageList<IdentityResourceDto> data = this.service.GetByPage(pageRequest);
             return Success(data);
         }
         [HttpGet]

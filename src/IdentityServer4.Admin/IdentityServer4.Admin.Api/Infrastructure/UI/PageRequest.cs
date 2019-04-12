@@ -22,8 +22,7 @@ namespace IdentityServer4.Admin.Api.Infrastructure.UI
 
         public virtual NHibernate.ICriteria PrepareCriteria(ref NHibernate.ICriteria criteria)
         {
-            if (!string.IsNullOrWhiteSpace(this.Keywords))
-                criteria.Add(Restrictions.Like("Name", this.Keywords.Trim(), MatchMode.Anywhere));
+        
 
             return criteria;
         }
