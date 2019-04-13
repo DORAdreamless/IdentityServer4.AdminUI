@@ -71,8 +71,8 @@
             style="margin-left:10px;"
             @close="onClaimDelete(claim,index)"
             v-for="(claim,index) in ApiResourceModel.UserClaims"
-            :key="claim.Id"
-          >{{claim.Type}}</el-tag>
+            :key="claim"
+          >{{claim}}</el-tag>
         </div>
       </el-form-item>
       <el-form-item v-if="Id>0">
@@ -230,8 +230,8 @@
 <script>
 import util from "../../../common/util";
 import {
-  CreateApiResource,
-  GetOneForEdit,
+  AddApiResource,
+  GetApiResource,
   UpdateApiResource
 } from "../../../api/identity_server/api_resource";
 import ApiScope from "./api_scope";
@@ -300,10 +300,7 @@ export default {
       if (util.isNullOrEmpty(this.formModel.Type)) {
         return;
       }
-      this.ApiResourceModel.UserClaims.push({
-        Id: Math.random(),
-        Type: this.formModel.Type
-      });
+      this.ApiResourceModel.UserClaims.push( this.formModel.Type);
       this.formModel.Type = "";
     },
     onClaimDelete: function(claim, index) {
@@ -346,6 +343,7 @@ export default {
     },
     //api secrets
     onNewApiSecret: function() {
+      this.ApiSecretId=null;
       this.dialogApiSecretVisible = true;
     },
     onEditApiSecret: function(secret, index) {
@@ -431,7 +429,7 @@ export default {
             }
           });
         } else {
-          CreateApiResource(params).then(function(result) {
+          AddApiResource(params).then(function(result) {
             if (result.success) {
               that.$router.push({
                 name: "IdentityServerApiResource"
@@ -441,12 +439,9 @@ export default {
         }
       });
     },
-    getApiResourceById: function() {
+    getApiResource: function() {
       let that = this;
-      if (!that.Id) {
-        return;
-      }
-      GetOneForEdit(that.Id).then(function(result) {
+      GetApiResource(that.Id).then(function(result) {
         if (result.success) {
           that.ApiResourceModel = Object.assign(
             that.ApiResourceModel,
@@ -458,7 +453,7 @@ export default {
   },
   mounted: function() {
     this.Id = this.$router.history.current.params["Id"];
-    this.getApiResourceById();
+    this.getApiResource();
     this.getApiScopes();
     this.getApiSecrets();
     this.getApiProperties();

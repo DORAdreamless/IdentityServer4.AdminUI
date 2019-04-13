@@ -15,10 +15,12 @@
           </el-tooltip>
         </span>
         <el-select v-model="ApiSecretModel.Type">
-          <el-option value="SharedSecret">SharedSecret</el-option>
-          <el-option value="X509Thumbprint">X509Thumbprint</el-option>
-          <el-option value="X509Name">X509Name</el-option>
-          <el-option value="X509CertificateBase64">X509CertificateBase64</el-option>
+          <el-option
+            v-for="item in ApiSecretModel.TypeList"
+            :key="item.value"
+            :value="item.value"
+            :label="item.label"
+          >{{item.label}}</el-option>
         </el-select>
       </el-form-item>
       <el-form-item label="Value：" prop="Value">
@@ -36,7 +38,7 @@
       <el-form-item label="哈希类型:" prop="HashType">
         <el-select v-model="ApiSecretModel.HashType">
           <el-option
-            v-for="item in options.HashTypeItems"
+            v-for="item in ApiSecretModel.HashTypes"
             :key="item.value"
             :value="item.value"
             :label="item.label"
@@ -74,7 +76,7 @@
 <script>
 import util from "../../../common/util";
 import {
-  CreateApiSecret,
+  AddApiSecret,
   GetOneForEdit,
   UpdateApiSecret
 } from "../../../api/identity_server/api_secret";
@@ -95,9 +97,6 @@ export default {
   },
   data() {
     return {
-      options: {
-        HashTypeItems: enums.HashType.items || []
-      },
       Id: null, //主键
       ApiSecretModelRules: {
         Description: [
@@ -120,7 +119,9 @@ export default {
         Expiration: null,
         Type: "SharedSecret",
         ApiResourceId: 0,
-        HashType: enums.HashType.const.Sha256
+        HashType: 0,
+        HashTypes: [],
+        TypeList: []
       }
     };
   },
@@ -145,7 +146,7 @@ export default {
             }
           });
         } else {
-          CreateApiSecret(params).then(function(result) {
+          AddApiSecret(params).then(function(result) {
             if (result.success) {
               that.$notify.success("操作成功。");
               that.$refs.ApiSecretForm.resetFields();
@@ -158,9 +159,6 @@ export default {
     getApiSecretById: function() {
       let that = this;
       that.$refs.ApiSecretForm.resetFields();
-      if (!that.Id) {
-        return;
-      }
       GetOneForEdit(that.Id).then(function(result) {
         if (result.success) {
           if (result.data.Expiration) {
@@ -168,6 +166,7 @@ export default {
               result.data.Expiration
             );
           }
+          result.data.ApiResourceId=that.ApiResourceId;
           that.ApiSecretModel = Object.assign(that.ApiSecretModel, result.data);
         }
       });

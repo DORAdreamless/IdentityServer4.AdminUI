@@ -10,5 +10,7 @@ namespace IdentityServer4.Admin.Api.Entities
     {
         public virtual int ApiResourceId { get; set; }
         public virtual ApiResource ApiResource { get; set; }
+
+        
     }
 }

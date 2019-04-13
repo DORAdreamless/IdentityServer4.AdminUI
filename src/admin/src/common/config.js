@@ -13,7 +13,7 @@ const config = {
   client_id: "js",
   redirect_uri: "http://localhost:8080/static/callback.html",
   response_type: "id_token token",
-  scope: "openid profile api1",
+  scope: "openid profile role api1",
   post_logout_redirect_uri: "http://localhost:5000"
 };
 

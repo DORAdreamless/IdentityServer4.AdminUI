@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Exceptionless.Extensions;
 
 namespace IdentityServer4.Admin.Api.Infrastructure.WebApi.Filters
 {
@@ -10,7 +11,8 @@ namespace IdentityServer4.Admin.Api.Infrastructure.WebApi.Filters
     {
         public override void OnException(ExceptionContext context)
         {
-            context.Result = new JsonResult(new { success=false,message=context.Exception.Message,data=new object(),code=500 });
+            Exception ex=context.Exception.GetInnermostException();
+            context.Result = new JsonResult(new { success=false,message=ex.Message,data=new object(),code=500 });
         }
     }
 }

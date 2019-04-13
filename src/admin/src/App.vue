@@ -260,6 +260,7 @@ export default {
    var mgr= new UserManager(config);
    mgr.getUser().then(user=>{
      if(user){
+       console.log(user)
        this.UserData=user.profile;
      }else{
        mgr.signinRedirect();

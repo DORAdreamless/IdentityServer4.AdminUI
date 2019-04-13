@@ -17,7 +17,7 @@ namespace IdentityServer4.Admin.Api.Dtos.Configuration
         [Required]
         public string Value { get; set; }
 
-        public List<ApiResourcePropertyDto> ApiResourceProperties { get; set; } = new List<ApiResourcePropertyDto>();
+        public List<ApiPropertyDto> ApiResourceProperties { get; set; } = new List<ApiPropertyDto>();
 
         public int TotalCount { get; set; }
 

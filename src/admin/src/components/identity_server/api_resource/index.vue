@@ -21,7 +21,7 @@
     </el-row>
     <el-table
       ref="singleTable"
-      :data="results.rows"
+      :data="results.list"
       highlight-current-row
       border
       style="width: 100%"
@@ -83,7 +83,7 @@ export default {
         keywords: ""
       },
       results: {
-        rows: [],
+        list: [],
         total: 0
       }
     };

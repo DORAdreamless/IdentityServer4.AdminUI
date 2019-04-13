@@ -3,16 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace IdentityServer4.Admin.Api.Dtos.Configuration
 {
-	public class IdentityResourceDto
+    public class IdentityResourceDto
 	{
 		public IdentityResourceDto()
 		{
 			UserClaims = new List<string>();
 		}
 
-		public int Id { get; set; }
 
-        [Required]
 		public string Name { get; set; }
 
 		public string DisplayName { get; set; }

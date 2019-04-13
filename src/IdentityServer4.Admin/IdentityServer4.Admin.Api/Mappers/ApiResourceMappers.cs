@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using IdentityServer4.Admin.Api.Dtos.Configuration;
 using IdentityServer4.Admin.Api.Entities;
-
+using System.Collections.Generic;
 
 namespace IdentityServer4.Admin.Api.Mappers
 {
@@ -14,65 +14,62 @@ namespace IdentityServer4.Admin.Api.Mappers
         }
 
         internal static IMapper Mapper { get; }
-
-        public static ApiResourceDto ToModel(this ApiResource resource)
+        #region ApiResources
+        public static ApiResource ToEntity(this ApiResourceDto apiResourceDto, ApiResource apiResource = null)
         {
-            return resource == null ? null : Mapper.Map<ApiResourceDto>(resource);
+            return Mapper.Map<ApiResourceDto, ApiResource>(apiResourceDto, apiResource);
         }
-
-        //public static ApiResourcesDto ToModel(this PagedList<ApiResource> resources)
-        //{
-        //    return resources == null ? null : Mapper.Map<ApiResourcesDto>(resources);
-        //}
-
-        //public static ApiResourcePropertiesDto ToModel(this PagedList<ApiResourceProperty> apiResourceProperties)
-        //{
-        //    return Mapper.Map<ApiResourcePropertiesDto>(apiResourceProperties);
-        //}
-
-        public static ApiResourcePropertiesDto ToModel(this ApiProperty apiResourceProperty)
+        public static ApiResourceDto ToModel(this ApiResource apiResource)
         {
-            return Mapper.Map<ApiResourcePropertiesDto>(apiResourceProperty);
+            return Mapper.Map<ApiResource, ApiResourceDto>(apiResource);
         }
-
-        //public static ApiSecretsDto ToModel(this PagedList<ApiSecret> secrets)
-        //{
-        //    return secrets == null ? null : Mapper.Map<ApiSecretsDto>(secrets);
-        //}
-
-        //public static ApiScopesDto ToModel(this PagedList<ApiScope> scopes)
-        //{
-        //    return scopes == null ? null : Mapper.Map<ApiScopesDto>(scopes);
-        //}
-
-        public static ApiScopesDto ToModel(this ApiScope resource)
+        public static List<ApiResourceListDto> ToModel(this List<ApiResource> apiResources)
         {
-            return resource == null ? null : Mapper.Map<ApiScopesDto>(resource);
+            return Mapper.Map<List<ApiResource>, List<ApiResourceListDto>>(apiResources);
         }
-
-        public static ApiSecretsDto ToModel(this ApiSecret resource)
+        #endregion
+        #region ApiScopes
+        public static ApiScope ToEntity(this ApiScopeDto apiScopeDto, ApiScope apiScope = null)
         {
-            return resource == null ? null : Mapper.Map<ApiSecretsDto>(resource);
+            return Mapper.Map<ApiScopeDto, ApiScope>(apiScopeDto, apiScope);
         }
-
-        public static ApiResource ToEntity(this ApiResourceDto resource)
+        public static ApiScopeDto ToModel(this ApiScope apiScope)
         {
-            return resource == null ? null : Mapper.Map<ApiResource>(resource);
+            return Mapper.Map<ApiScope, ApiScopeDto>(apiScope);
         }
-
-        public static ApiSecret ToEntity(this ApiSecretsDto resource)
+        public static List<ApiScopeListDto> ToModel(this List<ApiScope> apiScopes)
         {
-            return resource == null ? null : Mapper.Map<ApiSecret>(resource);
+            return Mapper.Map<List<ApiScope>, List<ApiScopeListDto>>(apiScopes);
         }
-
-        public static ApiScope ToEntity(this ApiScopesDto resource)
+        #endregion
+        #region ApiSecret
+        public static ApiSecret ToEntity(this ApiSecretDto apiSecretDto, ApiSecret apiSecret = null)
         {
-            return resource == null ? null : Mapper.Map<ApiScope>(resource);
+            return Mapper.Map<ApiSecretDto, ApiSecret>(apiSecretDto, apiSecret);
         }
-
-        public static ApiProperty ToEntity(this ApiResourcePropertiesDto apiResourceProperties)
+        public static ApiSecretDto ToModel(this ApiSecret apiSecret)
         {
-            return Mapper.Map<ApiProperty>(apiResourceProperties);
+            return Mapper.Map<ApiSecret, ApiSecretDto>(apiSecret);
         }
+        public static List<ApiSecretListDto> ToModel(this List<ApiSecret> apiSecrets)
+        {
+            return Mapper.Map<List<ApiSecret>, List<ApiSecretListDto>>(apiSecrets);
+        }
+        #endregion
+        #region ApiProperty
+        public static ApiProperty ToEntity(this ApiPropertyDto apiPropertyDto, ApiProperty apiProperty = null)
+        {
+            return Mapper.Map<ApiPropertyDto, ApiProperty>(apiPropertyDto, apiProperty);
+        }
+        public static ApiPropertyDto ToModel(this ApiProperty apiProperty)
+        {
+            return Mapper.Map<ApiProperty, ApiPropertyDto>(apiProperty);
+        }
+        public static List<ApiPropertyListDto> ToModel(this List<ApiProperty> apiProperties)
+        {
+            return Mapper.Map<List<ApiProperty>, List<ApiPropertyListDto>>(apiProperties);
+        }
+        #endregion
+
     }
 }

@@ -9,23 +9,19 @@ export const GetApiResourceByPage = function (pageParam) {
     })
 }
 
-export const GetOne = function (Id) {
+
+
+export const GetApiResource = function (Id) {
+    Id=Id||"";
     return axios({
-        url: `${base}/api/IdentityServer/ApiResource/GetOne?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiResource/GetApiResource?Id=${Id}`,
         method: 'GET'
     })
 }
 
-export const GetOneForEdit = function (Id) {
+export const AddApiResource = function (param) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiResource/GetOneForEdit?Id=${Id}`,
-        method: 'GET'
-    })
-}
-
-export const CreateApiResource = function (param) {
-    return axios({
-        url: `${base}/api/IdentityServer/ApiResource/Put`,
+        url: `${base}/api/IdentityServer/ApiResource/AddApiResource`,
         method: 'POST',
         data: param
     })
@@ -33,7 +29,7 @@ export const CreateApiResource = function (param) {
 
 export const UpdateApiResource = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiResource/Post?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiResource/UpdateApiResource?Id=${Id}`,
         method: 'POST',
         data: param
     })
@@ -41,7 +37,7 @@ export const UpdateApiResource = function (Id, param) {
 
 export const DeleteApiResource = function (Id) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiResource/Delete?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiResource/DeleteApiResource?Id=${Id}`,
         method: 'POST'
     })
 }

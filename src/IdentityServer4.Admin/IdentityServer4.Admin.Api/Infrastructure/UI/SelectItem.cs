@@ -1,15 +1,18 @@
-﻿namespace IdentityServer4.Admin.Api.Infrastructure.UI
+﻿using Newtonsoft.Json;
+
+namespace IdentityServer4.Admin.Api.Infrastructure.UI
 {
     public class SelectItem
     {
-        public SelectItem(string label, string text)
+        public SelectItem( string value,string label)
         {
             Label = label;
-            Text = text;
+            Value = value;
         }
 
+        [JsonProperty("label")]
         public string Label { get; set; }
-
-        public string Text { get; set; }
+        [JsonProperty("value")]
+        public string Value { get; set; }
     }
 }

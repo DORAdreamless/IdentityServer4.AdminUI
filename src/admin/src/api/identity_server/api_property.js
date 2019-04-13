@@ -16,15 +16,16 @@ export const GetOne = function (Id) {
 }
 
 export const GetOneForEdit = function (Id) {
+    Id=Id||'';
     return axios({
-        url: `${base}/api/IdentityServer/ApiProperty/GetOneForEdit?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiProperty/GetApiProperty?Id=${Id}`,
         method: 'GET'
     })
 }
 
 export const CreateApiProperty = function (param) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiProperty/Put`,
+        url: `${base}/api/IdentityServer/ApiProperty/AddApiProperty`,
         method: 'POST',
         data: param
     })
@@ -32,7 +33,7 @@ export const CreateApiProperty = function (param) {
 
 export const UpdateApiProperty = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiProperty/Post?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiProperty/UpdateApiProperty?Id=${Id}`,
         method: 'POST',
         data: param
     })
@@ -40,7 +41,7 @@ export const UpdateApiProperty = function (Id, param) {
 
 export const DeleteApiProperty = function (Id) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiProperty/Delete?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiProperty/DeleteApiProperty?Id=${Id}`,
         method: 'POST'
     })
 }

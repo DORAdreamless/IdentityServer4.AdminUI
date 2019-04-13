@@ -17,6 +17,9 @@ using Microsoft.Extensions.Options;
 using NHibernate;
 using ILoggerFactory = Microsoft.Extensions.Logging.ILoggerFactory;
 using NHibernate.Cfg;
+using IdentityModel;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace IdentityServer4.Admin.Web
 {
@@ -25,6 +28,7 @@ namespace IdentityServer4.Admin.Web
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
         }
 
         public IConfiguration Configuration { get; }
@@ -37,14 +41,21 @@ namespace IdentityServer4.Admin.Web
                         .AddAuthorization()
                         .AddJsonFormatters();
 
-            services.AddAuthentication("Bearer")
-     .AddJwtBearer("Bearer", options =>
-     {
-         options.Authority = "http://localhost:5000";
-         options.RequireHttpsMetadata = false;
 
-         options.Audience = "api1";
-     });
+
+            services.AddAuthentication("Bearer")
+                     .AddJwtBearer("Bearer", options =>
+                     {
+                         options.Authority = "http://localhost:5000";
+                         options.RequireHttpsMetadata = false;
+
+                         options.Audience = "api1";
+                         options.TokenValidationParameters = new TokenValidationParameters()
+                         {
+                             NameClaimType = JwtClaimTypes.Name,
+                             RoleClaimType = JwtClaimTypes.Role,
+                         };
+                     });
 
             services.AddCors(options =>
             {
@@ -58,7 +69,7 @@ namespace IdentityServer4.Admin.Web
             });
 
             NHibernate.Cfg.Configuration config = new NHibernate.Cfg.Configuration();
-            config.DataBaseIntegration(options=>
+            config.DataBaseIntegration(options =>
             {
                 options.ConnectionString = Configuration.GetConnectionString("DefaultConnection");
                 options.Driver<NHibernate.Driver.SqlClientDriver>();
@@ -70,11 +81,11 @@ namespace IdentityServer4.Admin.Web
                 options.KeywordsAutoImport = Hbm2DDLKeyWords.AutoQuote;
             });
             services.AddAdminApi(config);
-       
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {

@@ -8,23 +8,18 @@ export const GetApiSecrets = function (ApiResourceId) {
     })
 }
 
-export const GetOne = function (Id) {
-    return axios({
-        url: `${base}/api/IdentityServer/ApiSecret/GetOne?Id=${Id}`,
-        method: 'GET'
-    })
-}
 
 export const GetOneForEdit = function (Id) {
+    Id = Id || '';
     return axios({
-        url: `${base}/api/IdentityServer/ApiSecret/GetOneForEdit?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiSecret/GetApiSecret?Id=${Id}`,
         method: 'GET'
     })
 }
 
-export const CreateApiSecret = function (param) {
+export const AddApiSecret = function (param) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiSecret/Put`,
+        url: `${base}/api/IdentityServer/ApiSecret/AddApiSecret`,
         method: 'POST',
         data: param
     })
@@ -32,7 +27,7 @@ export const CreateApiSecret = function (param) {
 
 export const UpdateApiSecret = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiSecret/Post?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiSecret/UpdateApiSecret?Id=${Id}`,
         method: 'POST',
         data: param
     })
@@ -40,7 +35,7 @@ export const UpdateApiSecret = function (Id, param) {
 
 export const DeleteApiSecret = function (Id) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiSecret/Delete?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiSecret/DeleteApiSecret?Id=${Id}`,
         method: 'POST'
     })
 }

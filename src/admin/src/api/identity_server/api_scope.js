@@ -8,23 +8,19 @@ export const GetApiScopes = function (ApiResourceId) {
     })
 }
 
-export const GetOne = function (Id) {
-    return axios({
-        url: `${base}/api/IdentityServer/ApiScope/GetOne?Id=${Id}`,
-        method: 'GET'
-    })
-}
+
 
 export const GetOneForEdit = function (Id) {
+    Id=Id||'';
     return axios({
-        url: `${base}/api/IdentityServer/ApiScope/GetOneForEdit?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiScope/GetApiScope?Id=${Id}`,
         method: 'GET'
     })
 }
 
 export const CreateApiScope = function (param) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiScope/Put`,
+        url: `${base}/api/IdentityServer/ApiScope/AddApiScope`,
         method: 'POST',
         data: param
     })
@@ -32,7 +28,7 @@ export const CreateApiScope = function (param) {
 
 export const UpdateApiScope = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiScope/Post?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiScope/UpdateApiScope?Id=${Id}`,
         method: 'POST',
         data: param
     })
@@ -40,7 +36,7 @@ export const UpdateApiScope = function (Id, param) {
 
 export const DeleteApiScope = function (Id) {
     return axios({
-        url: `${base}/api/IdentityServer/ApiScope/Delete?Id=${Id}`,
+        url: `${base}/api/IdentityServer/ApiScope/DeleteApiScope?Id=${Id}`,
         method: 'POST'
     })
 }

@@ -25,18 +25,11 @@ namespace IdentityServer4.Admin.Api.Infrastructure
             this.Session = this.sessionFactory.OpenSession();
         }
 
-        public NHibernate.ISession Session { get; }
+        protected NHibernate.ISession Session { get; }
 
-        public ClaimsPrincipal User { get; }
-    }
+        protected ClaimsPrincipal User { get; }
 
-    public abstract class ServiceBase<TEntity, TDto> : ServiceBase where TEntity:class
-    {
-        public ServiceBase(ISessionFactory sessionFactory, IHttpContextAccessor contextAccessor) : base(sessionFactory, contextAccessor)
-        {
-        }
-
-        public PageList<TDto> GetRecordByPage(PageRequest page)
+        public PageList<TDto> GetRecordByPage<TEntity, TDto>(PageRequest page) where TEntity : class
         {
             var criteria = this.Session.CreateCriteria<TEntity>();
             page.PrepareCriteria(ref criteria);
@@ -52,7 +45,7 @@ namespace IdentityServer4.Admin.Api.Infrastructure
             criteria = this.Session.CreateCriteria<TEntity>();
             page.PrepareCriteria(ref criteria);
 
-           var mapper= new AutoMapper.MapperConfiguration(cfg =>{
+            var mapper = new AutoMapper.MapperConfiguration(cfg => {
                 cfg.CreateMap<TEntity, TDto>();
             }).CreateMapper();
 
@@ -60,4 +53,6 @@ namespace IdentityServer4.Admin.Api.Infrastructure
             return new PageList<TDto>(mapper.Map<List<TDto>>(list), total);
         }
     }
+
+   
 }

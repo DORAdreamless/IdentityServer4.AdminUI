@@ -26,15 +26,12 @@ namespace IdentityServer4.Admin.Api.Mappers
             CreateMap<ApiScope, ApiScopeDto>(MemberList.Destination)
                 .ForMember(x => x.UserClaims, opt => opt.MapFrom(src => src.UserClaims.Select(x => x.Type)));
 
-            CreateMap<ApiSecret, ApiSecretsDto>(MemberList.Destination)
-                .ForMember(dest => dest.Type, opt => opt.Condition(srs => srs != null))
-                .ForMember(x => x.ApiSecretId, opt => opt.MapFrom(x => x.Id))
-                .ForMember(x => x.ApiResourceId, opt => opt.MapFrom(x => x.ApiResource.Id));
+         
 
-            CreateMap<ApiSecret, ApiSecretDto>(MemberList.Destination)
-                .ForMember(dest => dest.Type, opt => opt.Condition(srs => srs != null));
+            CreateMap<ApiSecret, ApiSecretDto>().ReverseMap();
+            CreateMap<ApiSecret, ApiSecretListDto>();
 
-            CreateMap<ApiProperty, ApiResourcePropertyDto>(MemberList.Destination)
+            CreateMap<ApiProperty, ApiPropertyDto>(MemberList.Destination)
                 .ReverseMap();
 
             CreateMap<ApiProperty, ApiResourcePropertiesDto>(MemberList.Destination)
@@ -57,11 +54,9 @@ namespace IdentityServer4.Admin.Api.Mappers
 
             // model to entity
             CreateMap<ApiResourceDto, ApiResource>(MemberList.Source)
-                .ForMember(x => x.UserClaims, opts => opts.MapFrom(src => src.UserClaims.Select(x => new ApiResourceClaim { Type = x })));
+                .ForMember(x => x.UserClaims, opts => opts.MapFrom(src => src.UserClaims.Select(x => new ApiClaim { Type = x })));
 
-            CreateMap<ApiSecretsDto, ApiSecret>(MemberList.Source)
-                .ForMember(x => x.ApiResource, opts => opts.MapFrom(src => new ApiResource() { Id = src.ApiResourceId }))
-                .ForMember(x => x.Id, opt => opt.MapFrom(src => src.ApiSecretId));
+       
 
             CreateMap<ApiScopesDto, ApiScope>(MemberList.Source)
                 .ForMember(x => x.UserClaims, opts => opts.MapFrom(src => src.UserClaims.Select(x => new ApiScopeClaim { Type = x })))

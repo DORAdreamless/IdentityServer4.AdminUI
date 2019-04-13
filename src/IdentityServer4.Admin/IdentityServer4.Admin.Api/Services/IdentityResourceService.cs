@@ -14,7 +14,7 @@ using System.Text;
 
 namespace IdentityServer4.Admin.Api.Services
 {
-    public class IdentityResourceService : ServiceBase<IdentityResource, IdentityResourceDto>
+    public class IdentityResourceService : ServiceBase
     {
         public IdentityResourceService(ISessionFactory sessionFactory, IHttpContextAccessor contextAccessor) : base(sessionFactory, contextAccessor)
         {
@@ -89,6 +89,10 @@ namespace IdentityServer4.Admin.Api.Services
                 this.Session.CreateQuery("delete from IdentityClaim where IdentityResourceId=:IdentityResourceId")
                     .SetInt32("IdentityResourceId", id)
                     .ExecuteUpdate();
+
+                this.Session.CreateQuery("delete from IdentityProperty where IdentityResourceId=:IdentityResourceId")
+                   .SetInt32("IdentityResourceId", id)
+                   .ExecuteUpdate();
 
                 this.Session.Delete(identityResource);
                 transaction.Commit();
