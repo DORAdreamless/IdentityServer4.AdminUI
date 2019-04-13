@@ -21,7 +21,7 @@
     <el-form-item label="哈希类型:" prop="HashType">
       <el-select v-model="ClientSecret.HashType">
         <el-option
-          v-for="item in options.HashTypeItems"
+          v-for="item in ClientSecret.HashTypeList"
           :key="item.value"
           :value="item.value"
           :label="item.label"
@@ -36,14 +36,13 @@
     </el-form-item>
     <el-form-item>
       <el-button type="primary" @click="onOk">添加客户端密钥</el-button>
-   
     </el-form-item>
   </el-form>
 </template>
 
 <script>
 import util from "../../../common/util";
-import { CreateClientSecret } from "../../../api/identity_server/client_secret";
+import { AddClientSecret } from "../../../api/identity_server/client_secret";
 export default {
   name: "ClientSecret",
   props: {
@@ -78,9 +77,6 @@ export default {
         HashType: [
           { required: true, message: "请选择哈希类型", trigger: "change" }
         ]
-      },
-      options: {
-        HashTypeItems: enums.HashType.items || []
       }
     };
   },
@@ -95,9 +91,9 @@ export default {
           return;
         }
         var param = Object.assign({}, that.ClientSecret);
-        CreateClientSecret(param).then(result => {
+        AddClientSecret(param).then(result => {
           if (result.success) {
-            that.$notify.success('操作成功。');
+            that.$notify.success("操作成功。");
             that.$refs.ClientSecretForm.resetFields();
             that.$emit("onSecretOk");
           }
@@ -107,6 +103,7 @@ export default {
   },
   mounted() {
     this.ClientSecret.ClientId = this.ClientId;
+     that.$refs.ClientSecretForm.resetFields();
   }
 };
 </script>

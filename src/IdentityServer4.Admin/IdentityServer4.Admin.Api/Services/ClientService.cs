@@ -163,7 +163,7 @@ namespace IdentityServer4.Admin.Api.Services
 
         }
 
-  
+
 
         public void UpdateClientDeviceFlow(int id, ClientDto clientDto)
         {
@@ -423,6 +423,29 @@ namespace IdentityServer4.Admin.Api.Services
         }
 
         #region ClientProperty
+
+        public bool CanInsertProperty(ClientProperty clientProperty)
+        {
+            if (clientProperty.Id == 0)
+            {
+                var existsWithClientName = this.Session.CreateCriteria<Client>()
+                    .Add(NHibernate.Criterion.Restrictions.Eq("ClientId", clientProperty.Id))
+                    .Add(NHibernate.Criterion.Restrictions.Eq("Key", clientProperty.Key))
+                    .List<Client>()
+                    .FirstOrDefault();
+                return existsWithClientName == null;
+            }
+            else
+            {
+                var existsWithClientName = this.Session.CreateCriteria<Client>()
+                  .Add(NHibernate.Criterion.Restrictions.Eq("ClientId", clientProperty.Id))
+                  .Add(NHibernate.Criterion.Restrictions.Eq("Key", clientProperty.Key))
+                  .Add(NHibernate.Criterion.Restrictions.Not(NHibernate.Criterion.Restrictions.Eq("Id", clientProperty.Id)))
+                  .List<Client>()
+                  .FirstOrDefault();
+                return existsWithClientName == null;
+            }
+        }
         public List<ClientPropertyListDto> GetClientProperties(int clientId)
         {
           return  this.Session.CreateCriteria<ClientProperty>()
@@ -430,6 +453,78 @@ namespace IdentityServer4.Admin.Api.Services
                 .List<ClientProperty>()
                 .ToList()
                 .ToModel();
+        }
+        public void DeleteClientProperty(int id)
+        {
+            ClientProperty clientProperty = this.Session.Get<ClientProperty>(id);
+            if (clientProperty == null)
+                return;
+            this.Session.Delete(clientProperty);
+            this.Session.Flush();
+        }
+
+        public void AddClientProperty(ClientPropertyDto clientPropertyDto)
+        {
+            ClientProperty clientProperty = clientPropertyDto.ToEntity();
+            if (!CanInsertProperty(clientProperty))
+            {
+                throw new FluentValidationException($"属性{clientPropertyDto.Key}重复。");
+            }
+            this.Session.Save(clientProperty);
+            this.Session.Flush();
+        }
+        public void UpdateClientProperty(int id,ClientPropertyDto clientPropertyDto)
+        {
+            ClientProperty clientProperty = this.Session.Get<ClientProperty>(id);
+            if (clientProperty == null)
+            {
+                throw new FluentValidationException($"客户端属性{id}不存在。");
+            }
+            clientProperty=clientPropertyDto.ToEntity(clientProperty);
+            if (!CanInsertProperty(clientProperty))
+            {
+                throw new FluentValidationException($"属性{clientPropertyDto.Key}重复。");
+            }
+            this.Session.Save(clientProperty);
+            this.Session.Flush();
+        }
+        #endregion
+
+        #region ClientSecret
+        public List<ClientSecretListDto> GetClientSecrets(int clientId)
+        {
+            return this.Session.CreateCriteria<ClientSecret>()
+                   .Add(NHibernate.Criterion.Restrictions.Eq("ClientId", clientId))
+                   .List<ClientSecret>()
+                   .ToList()
+                   .ToModel();
+        }
+        public void DeleteClientSecret(int id)
+        {
+            ClientSecret clientProperty = this.Session.Get<ClientSecret>(id);
+            if (clientProperty == null)
+                return;
+            this.Session.Delete(clientProperty);
+            this.Session.Flush();
+        }
+
+        public void AddClientSecret(ClientSecretDto clientPropertyDto)
+        {
+            ClientSecret clientProperty = clientPropertyDto.ToEntity();
+            this.Session.Save(clientProperty);
+            this.Session.Flush();
+        }
+        public void UpdateClientSecret(int id, ClientSecretDto clientSecretDto)
+        {
+            ClientSecret clientSecret = this.Session.Get<ClientSecret>(id);
+            if (clientSecret == null)
+            {
+                throw new FluentValidationException($"客户端属性{id}不存在。");
+            }
+            clientSecret = clientSecretDto.ToEntity(clientSecret);
+        
+            this.Session.Save(clientSecret);
+            this.Session.Flush();
         }
         #endregion
     }

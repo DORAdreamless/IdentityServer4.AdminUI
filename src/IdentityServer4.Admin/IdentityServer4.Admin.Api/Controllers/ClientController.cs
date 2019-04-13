@@ -132,6 +132,29 @@ namespace IdentityServer4.Admin.Api.Controllers
             List<ClientPropertyListDto> data = this.service.GetClientProperties(clientId);
             return Success(data);
         }
+        [HttpGet]
+        [Route("/api/IdentityServer/Client/AddClientProperty")]
+        public IActionResult AddClientProperty([FromBody]ClientPropertyDto clientPropertyDto)
+        {
+             this.service.AddClientProperty(clientPropertyDto);
+            return Success();
+        }
+        [HttpGet]
+        [Route("/api/IdentityServer/Client/DeleteClientProperty")]
+        public IActionResult DeleteClientProperty(int clientId)
+        {
+            this.service.DeleteClientProperty(clientId);
+            return Success();
+        }
+        #endregion
+        #region ClientSecret
+        [HttpGet]
+        [Route("/api/IdentityServer/Client/GetClientSecrets")]
+        public IActionResult GetClientSecrets(int clientId)
+        {
+            List<ClientSecretListDto> data = this.service.GetClientSecrets(clientId);
+            return Success(data);
+        }
         #endregion
     }
 }

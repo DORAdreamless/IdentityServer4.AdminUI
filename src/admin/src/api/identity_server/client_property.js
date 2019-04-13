@@ -4,7 +4,7 @@ import axios from 'axios'
 
 export const GetClientProperties = function (clientId) {
     return axios({
-        url: `${base}/api/IdentityServer/ClientProperty/GetClientProperties?clientId=${clientId}`,
+        url: `${base}/api/IdentityServer/Client/GetClientProperties?clientId=${clientId}`,
         method: 'GET'
     })
 }
