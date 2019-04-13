@@ -18,11 +18,13 @@ namespace IdentityServer4.Admin.Api.Services
         {
         }
 
-        public   bool CanInsertClient(Client client)
+
+
+        public bool CanInsertClient(Client client)
         {
-            if (client.Id == 0 )
+            if (client.Id == 0)
             {
-                var existsWithClientName =  this.Session.CreateCriteria<Client>()
+                var existsWithClientName = this.Session.CreateCriteria<Client>()
                     .Add(NHibernate.Criterion.Restrictions.Eq("ClientId", client.ClientId))
                     .List<Client>()
                     .FirstOrDefault();
@@ -46,7 +48,7 @@ namespace IdentityServer4.Admin.Api.Services
             {
                 throw new Infrastructure.FluentValidation.FluentValidationException("客户端ID重复。");
             }
-            var transaction=this.Session.BeginTransaction();
+            var transaction = this.Session.BeginTransaction();
             try
             {
                 this.Session.Save(client);
@@ -58,7 +60,7 @@ namespace IdentityServer4.Admin.Api.Services
                 transaction.Rollback();
                 throw;
             }
-            
+
         }
         public void UpdateClientName(int id, ClientDto clientDto)
         {
@@ -158,8 +160,10 @@ namespace IdentityServer4.Admin.Api.Services
                 transaction.Rollback();
                 throw;
             }
-        
+
         }
+
+  
 
         public void UpdateClientDeviceFlow(int id, ClientDto clientDto)
         {
@@ -186,7 +190,53 @@ namespace IdentityServer4.Admin.Api.Services
 
         public void DeleteClient(int id)
         {
-            
+            Client client = this.Session.Get<Client>(id);
+            if (client == null)
+            {
+                throw new FluentValidationException($"客户端{id}不存在。");
+            }
+            var transaction = this.Session.BeginTransaction();
+            try
+            {
+
+                this.Session.CreateQuery("delete from ClientClaim where ClientId=:ClientId")
+                   .SetInt32("ClientId", id)
+                   .ExecuteUpdate();
+
+
+                this.Session.CreateQuery("delete from ClientCorsOrigin where ClientId=:ClientId")
+                     .SetInt32("ClientId", id)
+                     .ExecuteUpdate();
+
+                this.Session.CreateQuery("delete from ClientIdPRestriction where ClientId=:ClientId")
+                   .SetInt32("ClientId", id)
+                   .ExecuteUpdate();
+
+                this.Session.CreateQuery("delete from ClientPostLogoutRedirectUri where ClientId=:ClientId")
+                  .SetInt32("ClientId", id)
+                  .ExecuteUpdate();
+
+                this.Session.CreateQuery("delete from ClientGrantType where ClientId=:ClientId")
+                  .SetInt32("ClientId", id)
+                  .ExecuteUpdate();
+
+                this.Session.CreateQuery("delete from ClientRedirectUri where ClientId=:ClientId")
+                    .SetInt32("ClientId", id)
+                    .ExecuteUpdate();
+
+                this.Session.CreateQuery("delete from ClientScope where ClientId=:ClientId")
+                     .SetInt32("ClientId", id)
+                     .ExecuteUpdate();
+
+                this.Session.Delete(client);
+
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                throw ex;
+            }
         }
 
         public void UpdateClientAuthorization(int id, ClientDto clientDto)
@@ -278,7 +328,7 @@ namespace IdentityServer4.Admin.Api.Services
             {
                 return clientDto;
             }
-           Client client= this.Session.Get<Client>(id.Value);
+            Client client = this.Session.Get<Client>(id.Value);
             if (client == null)
                 return clientDto;
             client.AllowedScopes = this.Session.CreateCriteria<ClientScope>()
@@ -297,7 +347,7 @@ namespace IdentityServer4.Admin.Api.Services
                .Add(NHibernate.Criterion.Restrictions.Eq("ClientId", id.Value))
                .List<ClientPostLogoutRedirectUri>()
                .ToList();
-            client.IdentityProviderRestrictions = this.Session.CreateCriteria <ClientIdPRestriction>()
+            client.IdentityProviderRestrictions = this.Session.CreateCriteria<ClientIdPRestriction>()
                .Add(NHibernate.Criterion.Restrictions.Eq("ClientId", id.Value))
                .List<ClientIdPRestriction>()
                .ToList();
@@ -308,9 +358,9 @@ namespace IdentityServer4.Admin.Api.Services
             return client.ToModel(clientDto);
         }
 
-      
 
-        public void UpdateClientToken(int id,ClientDto clientDto)
+
+        public void UpdateClientToken(int id, ClientDto clientDto)
         {
             Client client = this.Session.Get<Client>(id);
             if (client == null)
@@ -332,7 +382,7 @@ namespace IdentityServer4.Admin.Api.Services
             client.ClientClaimsPrefix = clientDto.ClientClaimsPrefix;
             client.PairWiseSubjectSalt = clientDto.PairWiseSubjectSalt;
 
-            var transaction=this.Session.BeginTransaction();
+            var transaction = this.Session.BeginTransaction();
             try
             {
                 this.Session.Update(client);
@@ -343,7 +393,7 @@ namespace IdentityServer4.Admin.Api.Services
 
                 clientDto.AllowedCorsOrigins.ForEach(origin =>
                 {
-                   ClientCorsOrigin clientCorsOrigin = new ClientCorsOrigin();
+                    ClientCorsOrigin clientCorsOrigin = new ClientCorsOrigin();
                     clientCorsOrigin.ClientId = client.Id;
                     clientCorsOrigin.Origin = origin;
                     this.Session.Save(clientCorsOrigin);
@@ -369,7 +419,18 @@ namespace IdentityServer4.Admin.Api.Services
                 transaction.Rollback();
                 throw ex;
             }
-           
+
         }
+
+        #region ClientProperty
+        public List<ClientPropertyListDto> GetClientProperties(int clientId)
+        {
+          return  this.Session.CreateCriteria<ClientProperty>()
+                .Add(NHibernate.Criterion.Restrictions.Eq("ClientId", clientId))
+                .List<ClientProperty>()
+                .ToList()
+                .ToModel();
+        }
+        #endregion
     }
 }

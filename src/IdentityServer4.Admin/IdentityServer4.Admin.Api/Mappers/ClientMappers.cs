@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using IdentityServer4.Admin.Api.Dtos.Configuration;
 using IdentityServer4.Admin.Api.Entities;
-
+using System.Collections.Generic;
 
 namespace IdentityServer4.Admin.Api.Mappers
 {
@@ -15,64 +15,52 @@ namespace IdentityServer4.Admin.Api.Mappers
 
         internal static IMapper Mapper { get; }
 
-        public static ClientDto ToModel(this Client client,ClientDto clientDto)
+
+
+
+   
+
+        #region Clients
+        public static Client ToEntity(this ClientDto clientDto, Client client = null)
         {
-            return Mapper.Map<Client,ClientDto>(client, clientDto);
+            return Mapper.Map<ClientDto, Client>(clientDto, client);
         }
-
-        //public static ClientSecretsDto ToModel(this PagedList<ClientSecret> clientSecret)
-        //{
-        //    return Mapper.Map<ClientSecretsDto>(clientSecret);
-        //}
-
-        //public static ClientClaimsDto ToModel(this PagedList<ClientClaim> clientClaims)
-        //{
-        //    return Mapper.Map<ClientClaimsDto>(clientClaims);
-        //}
-
-        //public static ClientsDto ToModel(this PagedList<Client> clients)
-        //{
-        //    return Mapper.Map<ClientsDto>(clients);
-        //}
-
-        //public static ClientPropertiesDto ToModel(this PagedList<ClientProperty> clientProperties)
-        //{
-        //    return Mapper.Map<ClientPropertiesDto>(clientProperties);
-        //}
-        
-		public static Client ToEntity(this ClientDto client)
+        public static ClientDto ToModel(this Client client, ClientDto clientDto)
         {
-            return Mapper.Map<Client>(client);
+            return Mapper.Map<Client, ClientDto>(client, clientDto);
         }
-
-		public static ClientSecretsDto ToModel(this ClientSecret clientSecret)
-		{
-			return Mapper.Map<ClientSecretsDto>(clientSecret);
-		}
-        
-        public static ClientSecret ToEntity(this ClientSecretsDto clientSecret)
-		{
-			return Mapper.Map<ClientSecret>(clientSecret);
-		}
-
-        public static ClientClaimsDto ToModel(this ClientClaim clientClaim)
-		{
-			return Mapper.Map<ClientClaimsDto>(clientClaim);
-		}
-
-        public static ClientPropertiesDto ToModel(this ClientProperty clientProperty)
+        public static List<ClientListDto> ToModel(this List<Client> clients)
         {
-            return Mapper.Map<ClientPropertiesDto>(clientProperty);
+            return Mapper.Map<List<Client>, List<ClientListDto>>(clients);
         }
-
-        public static ClientClaim ToEntity(this ClientClaimsDto clientClaim)
-		{
-			return Mapper.Map<ClientClaim>(clientClaim);
-		}
-
-        public static ClientProperty ToEntity(this ClientPropertiesDto clientProperties)
+        #endregion
+        #region ClientSecrets
+        public static ClientSecret ToEntity(this ClientSecretDto clientSecretDto, ClientSecret clientSecret = null)
         {
-            return Mapper.Map<ClientProperty>(clientProperties);
+            return Mapper.Map<ClientSecretDto, ClientSecret>(clientSecretDto, clientSecret);
         }
+        public static ClientSecretDto ToModel(this ClientSecret clientSecret)
+        {
+            return Mapper.Map<ClientSecret, ClientSecretDto>(clientSecret);
+        }
+        public static List<ClientSecretListDto> ToModel(this List<ClientSecret> clientSecrets)
+        {
+            return Mapper.Map<List<ClientSecret>, List<ClientSecretListDto>>(clientSecrets);
+        }
+        #endregion
+        #region ClientProperties
+        public static ClientProperty ToEntity(this ClientPropertyDto clientPropertyDto, ClientProperty clientProperty = null)
+        {
+            return Mapper.Map<ClientPropertyDto, ClientProperty>(clientPropertyDto, clientProperty);
+        }
+        public static ClientPropertyDto ToModel(this ClientProperty clientProperty)
+        {
+            return Mapper.Map<ClientProperty, ClientPropertyDto>(clientProperty);
+        }
+        public static List<ClientPropertyListDto> ToModel(this List<ClientProperty> clientProperties)
+        {
+            return Mapper.Map<List<ClientProperty>, List<ClientPropertyListDto>>(clientProperties);
+        }
+        #endregion
     }
 }

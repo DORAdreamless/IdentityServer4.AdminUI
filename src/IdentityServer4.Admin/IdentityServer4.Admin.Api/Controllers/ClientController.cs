@@ -124,6 +124,14 @@ namespace IdentityServer4.Admin.Api.Controllers
         }
         #endregion
 
-
+        #region ClientProperty
+        [HttpGet]
+        [Route("/api/IdentityServer/Client/GetClientProperties")]
+        public IActionResult GetClientProperties(int clientId)
+        {
+            List<ClientPropertyListDto> data = this.service.GetClientProperties(clientId);
+            return Success(data);
+        }
+        #endregion
     }
 }

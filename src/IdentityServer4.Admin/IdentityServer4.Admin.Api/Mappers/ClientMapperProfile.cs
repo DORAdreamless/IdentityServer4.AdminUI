@@ -59,46 +59,16 @@ namespace IdentityServer4.Admin.Api.Mappers
             CreateMap<ClientProperty, ClientPropertyDto>(MemberList.Destination)
                 .ReverseMap();
 
-            CreateMap<ClientSecret, ClientSecretsDto>(MemberList.Destination)
-                .ForMember(dest => dest.Type, opt => opt.Condition(srs => srs != null))
-                .ForMember(x => x.ClientSecretId, opt => opt.MapFrom(x => x.Id))
-                .ForMember(x => x.ClientId, opt => opt.MapFrom(x => x.Client.Id));
+            
 
-            CreateMap<ClientClaim, ClientClaimsDto>(MemberList.Destination)
-                .ForMember(dest => dest.Type, opt => opt.Condition(srs => srs != null))
-                .ForMember(x => x.ClientClaimId, opt => opt.MapFrom(x => x.Id))
-                .ForMember(x => x.ClientId, opt => opt.MapFrom(x => x.Client.Id));
 
-            CreateMap<ClientProperty, ClientPropertiesDto>(MemberList.Destination)
-                .ForMember(dest => dest.Key, opt => opt.Condition(srs => srs != null))
-                .ForMember(x => x.ClientPropertyId, opt => opt.MapFrom(x => x.Id))
-                .ForMember(x => x.ClientId, opt => opt.MapFrom(x => x.Client.Id));
 
-            //PagedLists
-            //CreateMap<PagedList<ClientSecret>, ClientSecretsDto>(MemberList.Destination)
-            //    .ForMember(x => x.ClientSecrets, opt => opt.MapFrom(src => src.Data));
+    
+      
 
-            //CreateMap<PagedList<ClientClaim>, ClientClaimsDto>(MemberList.Destination)
-            //    .ForMember(x => x.ClientClaims, opt => opt.MapFrom(src => src.Data));
+   
 
-            //CreateMap<PagedList<ClientProperty>, ClientPropertiesDto>(MemberList.Destination)
-            //    .ForMember(x => x.ClientProperties, opt => opt.MapFrom(src => src.Data));
-
-            //CreateMap<PagedList<Client>, ClientsDto>(MemberList.Destination)
-            //    .ForMember(x => x.Clients, opt => opt.MapFrom(src => src.Data));
-
-            // model to entity
-            CreateMap<ClientSecretsDto, ClientSecret>(MemberList.Source)
-                        .ForMember(x => x.Client, dto => dto.MapFrom(src => new Client() { Id = src.ClientId }))
-                        .ForMember(x => x.Id, opt => opt.MapFrom(src => src.ClientSecretId));
-
-            CreateMap<ClientClaimsDto, ClientClaim>(MemberList.Source)
-                .ForMember(x => x.Client, dto => dto.MapFrom(src => new Client() { Id = src.ClientId }))
-                .ForMember(x => x.Id, opt => opt.MapFrom(src => src.ClientClaimId));
-
-            CreateMap<ClientPropertiesDto, ClientProperty>(MemberList.Source)
-                .ForMember(x => x.Client, dto => dto.MapFrom(src => new Client() { Id = src.ClientId }))
-                .ForMember(x => x.Id, opt => opt.MapFrom(src => src.ClientPropertyId));
+          
         }
     }
 }

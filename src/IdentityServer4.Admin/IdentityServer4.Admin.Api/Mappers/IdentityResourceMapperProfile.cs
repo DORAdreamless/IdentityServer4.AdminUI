@@ -20,11 +20,7 @@ namespace IdentityServer4.Admin.Api.Mappers
 
             CreateMap<IdentityProperty, IdentityPropertyDto>(MemberList.Destination)
                 .ReverseMap();
-
-            CreateMap<IdentityProperty, IdentityResourcePropertiesDto>(MemberList.Destination)
-                .ForMember(dest => dest.Key, opt => opt.Condition(srs => srs != null))
-                .ForMember(x => x.IdentityResourcePropertyId, opt => opt.MapFrom(x => x.Id))
-                .ForMember(x => x.IdentityResourceId, opt => opt.MapFrom(x => x.IdentityResource.Id));
+            
 
             //CreateMap<PagedList<IdentityResource>, IdentityResourcesDto>(MemberList.Destination)
             //    .ForMember(x => x.IdentityResources,
@@ -37,9 +33,7 @@ namespace IdentityServer4.Admin.Api.Mappers
             CreateMap<IdentityResourceDto, IdentityResource>(MemberList.Source)
                 .ForMember(x => x.UserClaims, opts => opts.MapFrom(src => src.UserClaims.Select(x => new IdentityClaim { Type = x })));
 
-            CreateMap<IdentityResourcePropertiesDto, IdentityProperty>(MemberList.Source)
-                .ForMember(x => x.IdentityResource, dto => dto.MapFrom(src => new IdentityResource() { Id = src.IdentityResourceId }))
-                .ForMember(x => x.Id, opt => opt.MapFrom(src => src.IdentityResourcePropertyId));
+           
         }
     }
 }

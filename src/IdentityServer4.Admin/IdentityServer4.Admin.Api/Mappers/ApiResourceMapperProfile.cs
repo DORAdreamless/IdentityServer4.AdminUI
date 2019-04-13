@@ -17,11 +17,7 @@ namespace IdentityServer4.Admin.Api.Mappers
             // entity to model
             CreateMap<ApiResource, ApiResourceDto>(MemberList.Destination)
                 .ForMember(x => x.UserClaims, opts => opts.MapFrom(src => src.UserClaims.Select(x => x.Type)));
-
-            CreateMap<ApiScope, ApiScopesDto>(MemberList.Destination)
-                .ForMember(x => x.UserClaims, opt => opt.MapFrom(src => src.UserClaims.Select(x => x.Type)))
-                .ForMember(x => x.ApiResourceId, opt => opt.MapFrom(src => src.ApiResource.Id))
-                .ForMember(x => x.ApiScopeId, opt => opt.MapFrom(src => src.Id));
+            
 
             CreateMap<ApiScope, ApiScopeDto>(MemberList.Destination)
                 .ForMember(x => x.UserClaims, opt => opt.MapFrom(src => src.UserClaims.Select(x => x.Type)));
@@ -33,11 +29,7 @@ namespace IdentityServer4.Admin.Api.Mappers
 
             CreateMap<ApiProperty, ApiPropertyDto>(MemberList.Destination)
                 .ReverseMap();
-
-            CreateMap<ApiProperty, ApiResourcePropertiesDto>(MemberList.Destination)
-                .ForMember(dest => dest.Key, opt => opt.Condition(srs => srs != null))
-                .ForMember(x => x.ApiResourcePropertyId, opt => opt.MapFrom(x => x.Id))
-                .ForMember(x => x.ApiResourceId, opt => opt.MapFrom(x => x.ApiResource.Id));
+            
 
             //PagedLists
             //CreateMap<PagedList<ApiResource>, ApiResourcesDto>(MemberList.Destination)
@@ -57,17 +49,11 @@ namespace IdentityServer4.Admin.Api.Mappers
                 .ForMember(x => x.UserClaims, opts => opts.MapFrom(src => src.UserClaims.Select(x => new ApiClaim { Type = x })));
 
        
-
-            CreateMap<ApiScopesDto, ApiScope>(MemberList.Source)
-                .ForMember(x => x.UserClaims, opts => opts.MapFrom(src => src.UserClaims.Select(x => new ApiScopeClaim { Type = x })))
-                .ForMember(x => x.Id, opt => opt.MapFrom(src => src.ApiScopeId));
+            
 
             CreateMap<ApiScopeDto, ApiScope>(MemberList.Source)
                 .ForMember(x => x.UserClaims, opts => opts.MapFrom(src => src.UserClaims.Select(x => new ApiScopeClaim { Type = x })));
-
-            CreateMap<ApiResourcePropertiesDto, ApiProperty>(MemberList.Source)
-                .ForMember(x => x.ApiResource, dto => dto.MapFrom(src => new ApiResource() { Id = src.ApiResourceId }))
-                .ForMember(x => x.Id, opt => opt.MapFrom(src => src.ApiResourcePropertyId));
+            
         }
     }
 }
