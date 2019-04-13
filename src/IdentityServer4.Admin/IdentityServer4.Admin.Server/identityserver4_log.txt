@@ -4523,3 +4523,1439 @@
 2019-04-13 13:24:18.814 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
 2019-04-13 13:24:18.815 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
 2019-04-13 13:24:18.816 +08:00 [DBG] Rendering check session result
+2019-04-13 13:39:44.023 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:39:44.026 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:39:44.026 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:39:44.027 +08:00 [DBG] Start discovery request
+2019-04-13 13:39:44.037 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:39:44.146 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 13:39:44.148 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 13:39:44.150 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 13:39:44.151 +08:00 [DBG] Start key discovery request
+2019-04-13 13:42:16.217 +08:00 [INF] Removing 0 grants
+2019-04-13 13:53:37.234 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:37.239 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:53:37.250 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:53:37.252 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:53:37.253 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:53:37.255 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:53:37.256 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:53:37.259 +08:00 [DBG] Start discovery request
+2019-04-13 13:53:37.266 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:53:37.270 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:37.271 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:53:37.273 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:53:37.274 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:53:37.275 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:53:37.276 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:53:37.276 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:53:37.277 +08:00 [DBG] Start discovery request
+2019-04-13 13:53:37.281 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:53:37.514 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:53:37.518 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:53:37.519 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:53:37.520 +08:00 [DBG] Rendering check session result
+2019-04-13 13:53:37.531 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:53:37.533 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:53:37.534 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:53:37.535 +08:00 [DBG] Rendering check session result
+2019-04-13 13:53:37.861 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:53:37.863 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:53:37.864 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:53:37.864 +08:00 [DBG] Start discovery request
+2019-04-13 13:53:37.868 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:53:37.976 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 13:53:37.979 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 13:53:37.980 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 13:53:37.982 +08:00 [DBG] Start key discovery request
+2019-04-13 13:53:38.205 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-04-13 13:53:38.207 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-04-13 13:53:38.208 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-04-13 13:53:38.208 +08:00 [DBG] Start authorize request
+2019-04-13 13:53:38.209 +08:00 [DBG] User in authorize request: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-13 13:53:38.209 +08:00 [DBG] Start authorize request protocol validation
+2019-04-13 13:53:38.216 +08:00 [DBG] js found in database: true
+2019-04-13 13:53:38.219 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 13:53:38.222 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 13:53:38.255 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-13 13:53:38.260 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 13:53:38.265 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-13 13:53:38.266 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-13 13:53:38.269 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","AllowedRedirectUris":["http://localhost:5003/callback.html","http://localhost:8080/static/callback.html","http://localhost:5000"],"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile role api1","State":"6fedf0fa99654291ac36c21aff1222ce","UiLocales":null,"Nonce":"b3ec0b0bdb904de69acf0fe30028a9ed","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"196427dba4d6029227d4647277c658db","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/static/callback.html","response_type":"id_token token","scope":"openid profile role api1","state":"6fedf0fa99654291ac36c21aff1222ce","nonce":"b3ec0b0bdb904de69acf0fe30028a9ed"},"$type":"AuthorizeRequestValidationLog"}
+2019-04-13 13:53:38.277 +08:00 [DBG] f66DJuJI0a63sYbB+AMjFUG43jpUuk7gum2GJENt5P8= found in database: true
+2019-04-13 13:53:38.282 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-04-13 13:53:38.283 +08:00 [DBG] Creating Implicit Flow response.
+2019-04-13 13:53:38.284 +08:00 [DBG] Getting claims for access token for client: js
+2019-04-13 13:53:38.285 +08:00 [DBG] Getting claims for access token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-13 13:53:38.296 +08:00 [DBG] Getting claims for identity token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1 and client: js
+2019-04-13 13:53:38.297 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-04-13 13:53:38.302 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","Endpoint":"Authorize","SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","Scopes":"openid profile role api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****Duiw","$type":"Token"},{"TokenType":"access_token","TokenValue":"****TrOQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLVM58EGCUT:00000003","TimeStamp":"2019-04-13T05:53:38.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-04-13 13:53:38.305 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ClientId":"js","RedirectUri":"http://localhost:8080/static/callback.html","State":"6fedf0fa99654291ac36c21aff1222ce","Scope":"openid profile role api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-04-13 13:53:38.520 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:38.523 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:53:38.525 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:53:38.526 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:53:38.526 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:53:38.527 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:53:38.528 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:53:38.529 +08:00 [DBG] Start discovery request
+2019-04-13 13:53:38.534 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:53:38.585 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:38.588 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:8080
+2019-04-13 13:53:38.591 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:53:38.592 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:53:38.593 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 13:53:38.594 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 13:53:38.595 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 13:53:38.595 +08:00 [DBG] Start key discovery request
+2019-04-13 13:53:38.626 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:38.635 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:38.636 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-04-13 13:53:38.638 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:53:38.643 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:53:38.644 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-04-13 13:53:38.646 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-04-13 13:53:38.647 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-04-13 13:53:38.647 +08:00 [DBG] Start userinfo request
+2019-04-13 13:53:38.648 +08:00 [DBG] Bearer token found in header
+2019-04-13 13:53:38.657 +08:00 [DBG] js found in database: true
+2019-04-13 13:53:38.659 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 13:53:38.664 +08:00 [DBG] js found in database: true
+2019-04-13 13:53:38.665 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 13:53:38.668 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-04-13 13:53:38.669 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1555134818,"exp":1555138418,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"js","sub":"a23e8a2b-b91b-434a-8270-69230f1246a1","auth_time":1555125514,"idp":"local","role":"admin","scope":["openid","profile","role","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-04-13 13:53:38.675 +08:00 [DBG] Creating userinfo response
+2019-04-13 13:53:38.676 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 13:53:38.676 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 13:53:38.678 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 13:53:38.679 +08:00 [DBG] Requested claim types: a b name rolel
+2019-04-13 13:53:38.679 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 13:53:38.681 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 13:53:38.685 +08:00 [INF] Profile service returned the following claim types: name
+2019-04-13 13:53:38.688 +08:00 [DBG] End userinfo request
+2019-04-13 13:53:38.699 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:53:38.701 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:53:38.702 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:53:38.703 +08:00 [DBG] Rendering check session result
+2019-04-13 13:53:39.572 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:39.575 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:53:39.578 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:53:39.578 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:53:39.579 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:53:39.580 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:53:39.581 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:53:39.581 +08:00 [DBG] Start discovery request
+2019-04-13 13:53:39.586 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:53:39.589 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:39.591 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:53:39.593 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:53:39.594 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:53:39.596 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:53:39.601 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:53:39.602 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:53:39.603 +08:00 [DBG] Start discovery request
+2019-04-13 13:53:39.607 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:53:39.898 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:53:39.900 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:53:39.901 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:53:39.902 +08:00 [DBG] Rendering check session result
+2019-04-13 13:53:39.905 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:53:39.905 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:53:39.906 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:53:39.906 +08:00 [DBG] Rendering check session result
+2019-04-13 13:53:45.646 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:45.649 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:53:45.651 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:53:45.653 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:53:45.654 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:53:45.655 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:53:45.656 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:53:45.656 +08:00 [DBG] Start discovery request
+2019-04-13 13:53:45.661 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:53:45.663 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:53:45.664 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:53:45.665 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:53:45.666 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:53:45.667 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:53:45.668 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:53:45.669 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:53:45.674 +08:00 [DBG] Start discovery request
+2019-04-13 13:53:45.678 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:53:45.908 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:53:45.912 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:53:45.914 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:53:45.915 +08:00 [DBG] Rendering check session result
+2019-04-13 13:53:45.920 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:53:45.925 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:53:45.926 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:53:45.927 +08:00 [DBG] Rendering check session result
+2019-04-13 13:56:01.487 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:56:01.489 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:56:01.491 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:56:01.491 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:56:01.492 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:56:01.493 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:56:01.493 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:56:01.494 +08:00 [DBG] Start discovery request
+2019-04-13 13:56:01.498 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:56:01.503 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:56:01.504 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:56:01.506 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:56:01.506 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:56:01.506 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:56:01.507 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:56:01.507 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:56:01.508 +08:00 [DBG] Start discovery request
+2019-04-13 13:56:01.511 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:56:01.730 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:56:01.731 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:56:01.732 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:56:01.733 +08:00 [DBG] Rendering check session result
+2019-04-13 13:56:01.736 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:56:01.737 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:56:01.738 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:56:01.739 +08:00 [DBG] Rendering check session result
+2019-04-13 13:56:02.109 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:56:02.113 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:56:02.114 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:56:02.114 +08:00 [DBG] Start discovery request
+2019-04-13 13:56:02.119 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:56:02.238 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 13:56:02.241 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 13:56:02.242 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 13:56:02.243 +08:00 [DBG] Start key discovery request
+2019-04-13 13:56:58.033 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:56:58.036 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:56:58.038 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:56:58.038 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:56:58.039 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:56:58.040 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:56:58.041 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:56:58.043 +08:00 [DBG] Start discovery request
+2019-04-13 13:56:58.048 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:56:58.053 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:56:58.053 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:56:58.055 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:56:58.055 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:56:58.056 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:56:58.057 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:56:58.057 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:56:58.058 +08:00 [DBG] Start discovery request
+2019-04-13 13:56:58.061 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:56:58.335 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:56:58.336 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:56:58.337 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:56:58.338 +08:00 [DBG] Rendering check session result
+2019-04-13 13:56:58.341 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:56:58.342 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:56:58.342 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:56:58.343 +08:00 [DBG] Rendering check session result
+2019-04-13 13:57:06.430 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:57:06.432 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:57:06.434 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:57:06.435 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:57:06.436 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:57:06.437 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:57:06.438 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:57:06.438 +08:00 [DBG] Start discovery request
+2019-04-13 13:57:06.442 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:57:06.445 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 13:57:06.446 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 13:57:06.447 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 13:57:06.448 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 13:57:06.448 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:57:06.449 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:57:06.449 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:57:06.450 +08:00 [DBG] Start discovery request
+2019-04-13 13:57:06.455 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:57:06.667 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:57:06.670 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:57:06.670 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:57:06.671 +08:00 [DBG] Rendering check session result
+2019-04-13 13:57:06.675 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 13:57:06.676 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 13:57:06.677 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 13:57:06.678 +08:00 [DBG] Rendering check session result
+2019-04-13 13:57:07.031 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 13:57:07.033 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 13:57:07.033 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 13:57:07.034 +08:00 [DBG] Start discovery request
+2019-04-13 13:57:07.038 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 13:57:07.145 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 13:57:07.149 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 13:57:07.150 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 13:57:07.151 +08:00 [DBG] Start key discovery request
+2019-04-13 14:42:16.230 +08:00 [INF] Removing 0 grants
+2019-04-13 15:42:16.243 +08:00 [INF] Removing 0 grants
+2019-04-13 16:42:16.256 +08:00 [INF] Removing 0 grants
+2019-04-13 17:42:16.277 +08:00 [INF] Removing 0 grants
+2019-04-13 18:42:16.291 +08:00 [INF] Removing 0 grants
+2019-04-13 19:29:41.201 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-04-13 19:29:41.205 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-04-13 19:29:41.206 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-04-13 19:29:41.207 +08:00 [DBG] Start authorize request
+2019-04-13 19:29:41.208 +08:00 [DBG] User in authorize request: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-13 19:29:41.208 +08:00 [DBG] Start authorize request protocol validation
+2019-04-13 19:29:41.217 +08:00 [DBG] js found in database: true
+2019-04-13 19:29:41.219 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 19:29:41.224 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 19:29:41.232 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-13 19:29:41.234 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 19:29:41.238 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-13 19:29:41.239 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-13 19:29:41.240 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","AllowedRedirectUris":["http://localhost:5003/callback.html","http://localhost:8080/static/callback.html","http://localhost:5000"],"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile role api1","State":"0a1a8e33ea1f4f558f643fa95690de5d","UiLocales":null,"Nonce":"e3eff18dd7024a99b3857fd790837e6e","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"196427dba4d6029227d4647277c658db","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/static/callback.html","response_type":"id_token token","scope":"openid profile role api1","state":"0a1a8e33ea1f4f558f643fa95690de5d","nonce":"e3eff18dd7024a99b3857fd790837e6e"},"$type":"AuthorizeRequestValidationLog"}
+2019-04-13 19:29:41.246 +08:00 [DBG] f66DJuJI0a63sYbB+AMjFUG43jpUuk7gum2GJENt5P8= found in database: true
+2019-04-13 19:29:41.254 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-04-13 19:29:41.255 +08:00 [DBG] Creating Implicit Flow response.
+2019-04-13 19:29:41.255 +08:00 [DBG] Getting claims for access token for client: js
+2019-04-13 19:29:41.256 +08:00 [DBG] Getting claims for access token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-13 19:29:41.268 +08:00 [DBG] Getting claims for identity token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1 and client: js
+2019-04-13 19:29:41.270 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-04-13 19:29:41.276 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","Endpoint":"Authorize","SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","Scopes":"openid profile role api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****2ePw","$type":"Token"},{"TokenType":"access_token","TokenValue":"****TCCg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLVM58EGCV6:00000001","TimeStamp":"2019-04-13T11:29:41.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-04-13 19:29:41.287 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ClientId":"js","RedirectUri":"http://localhost:8080/static/callback.html","State":"0a1a8e33ea1f4f558f643fa95690de5d","Scope":"openid profile role api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-04-13 19:29:41.526 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 19:29:41.530 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 19:29:41.533 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 19:29:41.533 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 19:29:41.534 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 19:29:41.534 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 19:29:41.535 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 19:29:41.536 +08:00 [DBG] Start discovery request
+2019-04-13 19:29:41.539 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 19:29:41.587 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 19:29:41.589 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:8080
+2019-04-13 19:29:41.593 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 19:29:41.595 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 19:29:41.596 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 19:29:41.597 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 19:29:41.599 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 19:29:41.599 +08:00 [DBG] Start key discovery request
+2019-04-13 19:29:41.637 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 19:29:41.642 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 19:29:41.643 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-04-13 19:29:41.646 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 19:29:41.646 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 19:29:41.647 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-04-13 19:29:41.649 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-04-13 19:29:41.650 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-04-13 19:29:41.650 +08:00 [DBG] Start userinfo request
+2019-04-13 19:29:41.651 +08:00 [DBG] Bearer token found in header
+2019-04-13 19:29:41.658 +08:00 [DBG] js found in database: true
+2019-04-13 19:29:41.658 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 19:29:41.665 +08:00 [DBG] js found in database: true
+2019-04-13 19:29:41.665 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 19:29:41.667 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-04-13 19:29:41.669 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1555154981,"exp":1555158581,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"js","sub":"a23e8a2b-b91b-434a-8270-69230f1246a1","auth_time":1555125514,"idp":"local","role":"admin","scope":["openid","profile","role","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-04-13 19:29:41.674 +08:00 [DBG] Creating userinfo response
+2019-04-13 19:29:41.674 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 19:29:41.675 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 19:29:41.677 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 19:29:41.678 +08:00 [DBG] Requested claim types: a b name rolel
+2019-04-13 19:29:41.678 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 19:29:41.680 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 19:29:41.684 +08:00 [INF] Profile service returned the following claim types: name
+2019-04-13 19:29:41.685 +08:00 [DBG] End userinfo request
+2019-04-13 19:29:41.696 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 19:29:41.697 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 19:29:41.698 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 19:29:41.699 +08:00 [DBG] Rendering check session result
+2019-04-13 19:29:42.530 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 19:29:42.536 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 19:29:42.540 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 19:29:42.543 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 19:29:42.545 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 19:29:42.549 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 19:29:42.550 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 19:29:42.551 +08:00 [DBG] Start discovery request
+2019-04-13 19:29:42.559 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 19:29:42.565 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 19:29:42.566 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 19:29:42.569 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 19:29:42.572 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 19:29:42.573 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 19:29:42.575 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 19:29:42.576 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 19:29:42.578 +08:00 [DBG] Start discovery request
+2019-04-13 19:29:42.583 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 19:29:42.790 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 19:29:42.792 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 19:29:42.793 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 19:29:42.794 +08:00 [DBG] Rendering check session result
+2019-04-13 19:29:42.798 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 19:29:42.799 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 19:29:42.801 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 19:29:42.805 +08:00 [DBG] Rendering check session result
+2019-04-13 19:42:16.307 +08:00 [INF] Removing 0 grants
+2019-04-13 20:42:16.329 +08:00 [INF] Removing 0 grants
+2019-04-13 21:42:16.351 +08:00 [INF] Removing 0 grants
+2019-04-13 22:41:31.002 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-04-13 22:41:31.005 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-04-13 22:41:31.006 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-04-13 22:41:31.006 +08:00 [DBG] Start authorize request
+2019-04-13 22:41:31.007 +08:00 [DBG] User in authorize request: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-13 22:41:31.008 +08:00 [DBG] Start authorize request protocol validation
+2019-04-13 22:41:31.046 +08:00 [DBG] js found in database: true
+2019-04-13 22:41:31.047 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 22:41:31.063 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 22:41:31.191 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-13 22:41:31.196 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 22:41:31.201 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-13 22:41:31.202 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-13 22:41:31.208 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","AllowedRedirectUris":["http://localhost:5003/callback.html","http://localhost:8080/static/callback.html","http://localhost:5000"],"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile role api1","State":"18913314fd05459a8aabe0582fa7b8fd","UiLocales":null,"Nonce":"e3c40b6e491e42dbb8f0638c90894ef7","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"196427dba4d6029227d4647277c658db","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/static/callback.html","response_type":"id_token token","scope":"openid profile role api1","state":"18913314fd05459a8aabe0582fa7b8fd","nonce":"e3c40b6e491e42dbb8f0638c90894ef7"},"$type":"AuthorizeRequestValidationLog"}
+2019-04-13 22:41:31.218 +08:00 [DBG] f66DJuJI0a63sYbB+AMjFUG43jpUuk7gum2GJENt5P8= found in database: true
+2019-04-13 22:41:31.221 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-04-13 22:41:31.222 +08:00 [DBG] Creating Implicit Flow response.
+2019-04-13 22:41:31.222 +08:00 [DBG] Getting claims for access token for client: js
+2019-04-13 22:41:31.223 +08:00 [DBG] Getting claims for access token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-13 22:41:31.233 +08:00 [DBG] Getting claims for identity token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1 and client: js
+2019-04-13 22:41:31.235 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-04-13 22:41:31.245 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","Endpoint":"Authorize","SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","Scopes":"openid profile role api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****EPdw","$type":"Token"},{"TokenType":"access_token","TokenValue":"****jOqA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLVM58EGCV9:00000001","TimeStamp":"2019-04-13T14:41:31.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-04-13 22:41:31.257 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ClientId":"js","RedirectUri":"http://localhost:8080/static/callback.html","State":"18913314fd05459a8aabe0582fa7b8fd","Scope":"openid profile role api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-04-13 22:41:31.501 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 22:41:31.505 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 22:41:31.510 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 22:41:31.511 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 22:41:31.512 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 22:41:31.515 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 22:41:31.516 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 22:41:31.517 +08:00 [DBG] Start discovery request
+2019-04-13 22:41:31.543 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 22:41:31.563 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 22:41:31.564 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:8080
+2019-04-13 22:41:31.566 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 22:41:31.569 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 22:41:31.570 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 22:41:31.570 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 22:41:31.571 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 22:41:31.571 +08:00 [DBG] Start key discovery request
+2019-04-13 22:41:31.602 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 22:41:31.607 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 22:41:31.609 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-04-13 22:41:31.612 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 22:41:31.613 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 22:41:31.613 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-04-13 22:41:31.616 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-04-13 22:41:31.617 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-04-13 22:41:31.617 +08:00 [DBG] Start userinfo request
+2019-04-13 22:41:31.618 +08:00 [DBG] Bearer token found in header
+2019-04-13 22:41:31.628 +08:00 [DBG] js found in database: true
+2019-04-13 22:41:31.629 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 22:41:31.636 +08:00 [DBG] js found in database: true
+2019-04-13 22:41:31.636 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 22:41:31.640 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-04-13 22:41:31.645 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1555166491,"exp":1555170091,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"js","sub":"a23e8a2b-b91b-434a-8270-69230f1246a1","auth_time":1555125514,"idp":"local","role":"admin","scope":["openid","profile","role","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-04-13 22:41:31.652 +08:00 [DBG] Creating userinfo response
+2019-04-13 22:41:31.655 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 22:41:31.656 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 22:41:31.658 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 22:41:31.659 +08:00 [DBG] Requested claim types: a b name rolel
+2019-04-13 22:41:31.659 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 22:41:31.661 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 22:41:31.665 +08:00 [INF] Profile service returned the following claim types: name
+2019-04-13 22:41:31.666 +08:00 [DBG] End userinfo request
+2019-04-13 22:41:31.687 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 22:41:31.691 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 22:41:31.693 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 22:41:31.695 +08:00 [DBG] Rendering check session result
+2019-04-13 22:41:32.568 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 22:41:32.572 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 22:41:32.575 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 22:41:32.576 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 22:41:32.577 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 22:41:32.579 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 22:41:32.580 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 22:41:32.585 +08:00 [DBG] Start discovery request
+2019-04-13 22:41:32.589 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 22:41:32.592 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 22:41:32.593 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 22:41:32.595 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 22:41:32.597 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 22:41:32.597 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 22:41:32.598 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 22:41:32.599 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 22:41:32.599 +08:00 [DBG] Start discovery request
+2019-04-13 22:41:32.603 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 22:41:32.847 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 22:41:32.849 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 22:41:32.850 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 22:41:32.851 +08:00 [DBG] Rendering check session result
+2019-04-13 22:41:32.854 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 22:41:32.855 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 22:41:32.856 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 22:41:32.856 +08:00 [DBG] Rendering check session result
+2019-04-13 22:42:16.362 +08:00 [INF] Removing 0 grants
+2019-04-13 23:06:02.090 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:06:02.093 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:06:02.127 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:06:02.129 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:06:02.130 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:06:02.130 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:06:02.131 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:06:02.131 +08:00 [DBG] Start discovery request
+2019-04-13 23:06:02.155 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:06:02.159 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:06:02.160 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:06:02.162 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:06:02.163 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:06:02.163 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:06:02.164 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:06:02.164 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:06:02.165 +08:00 [DBG] Start discovery request
+2019-04-13 23:06:02.168 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:06:02.350 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:06:02.352 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:06:02.352 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:06:02.353 +08:00 [DBG] Rendering check session result
+2019-04-13 23:06:02.356 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:06:02.356 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:06:02.357 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:06:02.358 +08:00 [DBG] Rendering check session result
+2019-04-13 23:06:51.018 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:06:51.020 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:06:51.021 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:06:51.022 +08:00 [DBG] Start discovery request
+2019-04-13 23:06:51.043 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:06:51.164 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 23:06:51.168 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 23:06:51.169 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 23:06:51.170 +08:00 [DBG] Start key discovery request
+2019-04-13 23:08:48.989 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:08:48.991 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:08:48.991 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:08:48.992 +08:00 [DBG] Start discovery request
+2019-04-13 23:08:49.017 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:08:49.138 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 23:08:49.142 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 23:08:49.144 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 23:08:49.145 +08:00 [DBG] Start key discovery request
+2019-04-13 23:13:00.539 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:13:00.543 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:13:00.545 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:13:00.546 +08:00 [DBG] Start discovery request
+2019-04-13 23:13:00.570 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:13:00.688 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 23:13:00.694 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 23:13:00.695 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 23:13:00.697 +08:00 [DBG] Start key discovery request
+2019-04-13 23:23:17.564 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:23:17.566 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:23:17.567 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:23:17.568 +08:00 [DBG] Start discovery request
+2019-04-13 23:23:17.598 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:23:17.711 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 23:23:17.714 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 23:23:17.716 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 23:23:17.717 +08:00 [DBG] Start key discovery request
+2019-04-13 23:26:32.325 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:26:32.329 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:26:32.334 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:26:32.335 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:26:32.335 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:26:32.336 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:26:32.337 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:26:32.337 +08:00 [DBG] Start discovery request
+2019-04-13 23:26:32.367 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:26:32.372 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:26:32.373 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:26:32.375 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:26:32.376 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:26:32.376 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:26:32.377 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:26:32.380 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:26:32.380 +08:00 [DBG] Start discovery request
+2019-04-13 23:26:32.386 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:26:32.620 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:26:32.622 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:26:32.624 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:26:32.625 +08:00 [DBG] Rendering check session result
+2019-04-13 23:26:32.636 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:26:32.638 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:26:32.639 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:26:32.640 +08:00 [DBG] Rendering check session result
+2019-04-13 23:32:44.774 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:32:44.777 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:32:44.786 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:32:44.788 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:32:44.788 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:32:44.789 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:32:44.790 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:32:44.790 +08:00 [DBG] Start discovery request
+2019-04-13 23:32:44.812 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:32:44.817 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:32:44.817 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:32:44.819 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:32:44.820 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:32:44.821 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:32:44.822 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:32:44.822 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:32:44.823 +08:00 [DBG] Start discovery request
+2019-04-13 23:32:44.831 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:32:45.060 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:32:45.063 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:32:45.064 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:32:45.066 +08:00 [DBG] Rendering check session result
+2019-04-13 23:32:45.069 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:32:45.070 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:32:45.071 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:32:45.076 +08:00 [DBG] Rendering check session result
+2019-04-13 23:32:45.362 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:32:45.366 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:32:45.366 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:32:45.367 +08:00 [DBG] Start discovery request
+2019-04-13 23:32:45.371 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:32:45.478 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 23:32:45.480 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 23:32:45.481 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 23:32:45.482 +08:00 [DBG] Start key discovery request
+2019-04-13 23:36:35.408 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:36:35.411 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:36:35.416 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:36:35.416 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:36:35.417 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:36:35.418 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:36:35.418 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:36:35.423 +08:00 [DBG] Start discovery request
+2019-04-13 23:36:35.444 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:36:35.449 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:36:35.451 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:36:35.453 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:36:35.454 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:36:35.457 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:36:35.458 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:36:35.458 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:36:35.459 +08:00 [DBG] Start discovery request
+2019-04-13 23:36:35.463 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:36:35.688 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:36:35.690 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:36:35.690 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:36:35.691 +08:00 [DBG] Rendering check session result
+2019-04-13 23:36:35.693 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:36:35.694 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:36:35.695 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:36:35.695 +08:00 [DBG] Rendering check session result
+2019-04-13 23:42:16.378 +08:00 [INF] Removing 0 grants
+2019-04-13 23:49:47.326 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:49:47.331 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:49:47.333 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:49:47.333 +08:00 [DBG] Start discovery request
+2019-04-13 23:49:47.362 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:49:47.477 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 23:49:47.480 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 23:49:47.483 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 23:49:47.484 +08:00 [DBG] Start key discovery request
+2019-04-13 23:49:47.704 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-04-13 23:49:47.707 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-04-13 23:49:47.708 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-04-13 23:49:47.708 +08:00 [DBG] Start authorize request
+2019-04-13 23:49:47.709 +08:00 [DBG] User in authorize request: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-13 23:49:47.710 +08:00 [DBG] Start authorize request protocol validation
+2019-04-13 23:49:47.751 +08:00 [DBG] js found in database: true
+2019-04-13 23:49:47.752 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 23:49:47.763 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 23:49:47.889 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-13 23:49:47.895 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 23:49:47.901 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-13 23:49:47.902 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-13 23:49:47.903 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","AllowedRedirectUris":["http://localhost:5003/callback.html","http://localhost:8080/static/callback.html","http://localhost:5000"],"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile role api1","State":"fde1c3474ded4434bff329870d5639da","UiLocales":null,"Nonce":"d64202720bb94e2298ca5fbff3e8402e","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"196427dba4d6029227d4647277c658db","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/static/callback.html","response_type":"id_token token","scope":"openid profile role api1","state":"fde1c3474ded4434bff329870d5639da","nonce":"d64202720bb94e2298ca5fbff3e8402e"},"$type":"AuthorizeRequestValidationLog"}
+2019-04-13 23:49:47.924 +08:00 [DBG] f66DJuJI0a63sYbB+AMjFUG43jpUuk7gum2GJENt5P8= found in database: true
+2019-04-13 23:49:47.927 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-04-13 23:49:47.929 +08:00 [DBG] Creating Implicit Flow response.
+2019-04-13 23:49:47.930 +08:00 [DBG] Getting claims for access token for client: js
+2019-04-13 23:49:47.931 +08:00 [DBG] Getting claims for access token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-13 23:49:47.948 +08:00 [DBG] Getting claims for identity token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1 and client: js
+2019-04-13 23:49:47.952 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-04-13 23:49:47.958 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","Endpoint":"Authorize","SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","Scopes":"openid profile role api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****N-pA","$type":"Token"},{"TokenType":"access_token","TokenValue":"****41JA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLVM58EGCVU:00000001","TimeStamp":"2019-04-13T15:49:47.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-04-13 23:49:47.970 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ClientId":"js","RedirectUri":"http://localhost:8080/static/callback.html","State":"fde1c3474ded4434bff329870d5639da","Scope":"openid profile role api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-04-13 23:49:48.190 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:49:48.193 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:49:48.197 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:49:48.197 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:49:48.198 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:49:48.199 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:49:48.200 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:49:48.201 +08:00 [DBG] Start discovery request
+2019-04-13 23:49:48.206 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:49:48.251 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:49:48.253 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:8080
+2019-04-13 23:49:48.255 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:49:48.255 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:49:48.256 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-13 23:49:48.256 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-13 23:49:48.257 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-13 23:49:48.258 +08:00 [DBG] Start key discovery request
+2019-04-13 23:49:48.296 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:49:48.301 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:49:48.301 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-04-13 23:49:48.303 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:49:48.303 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:49:48.304 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-04-13 23:49:48.305 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-04-13 23:49:48.305 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-04-13 23:49:48.306 +08:00 [DBG] Start userinfo request
+2019-04-13 23:49:48.306 +08:00 [DBG] Bearer token found in header
+2019-04-13 23:49:48.314 +08:00 [DBG] js found in database: true
+2019-04-13 23:49:48.315 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 23:49:48.318 +08:00 [DBG] js found in database: true
+2019-04-13 23:49:48.319 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-13 23:49:48.322 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-04-13 23:49:48.323 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1555170587,"exp":1555174187,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"js","sub":"a23e8a2b-b91b-434a-8270-69230f1246a1","auth_time":1555125514,"idp":"local","role":"admin","scope":["openid","profile","role","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-04-13 23:49:48.329 +08:00 [DBG] Creating userinfo response
+2019-04-13 23:49:48.331 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 23:49:48.332 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 23:49:48.334 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 23:49:48.335 +08:00 [DBG] Requested claim types: a b name rolel
+2019-04-13 23:49:48.335 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-13 23:49:48.337 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-13 23:49:48.341 +08:00 [INF] Profile service returned the following claim types: name
+2019-04-13 23:49:48.345 +08:00 [DBG] End userinfo request
+2019-04-13 23:49:48.356 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:49:48.357 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:49:48.358 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:49:48.359 +08:00 [DBG] Rendering check session result
+2019-04-13 23:49:49.256 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:49:49.258 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:49:49.259 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:49:49.260 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:49:49.261 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:49:49.262 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:49:49.263 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:49:49.264 +08:00 [DBG] Start discovery request
+2019-04-13 23:49:49.268 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:49:49.271 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-13 23:49:49.272 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-13 23:49:49.273 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-13 23:49:49.274 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-13 23:49:49.274 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-13 23:49:49.275 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-13 23:49:49.275 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-13 23:49:49.276 +08:00 [DBG] Start discovery request
+2019-04-13 23:49:49.279 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-13 23:49:49.589 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:49:49.594 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:49:49.595 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:49:49.596 +08:00 [DBG] Rendering check session result
+2019-04-13 23:49:49.599 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-13 23:49:49.600 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-13 23:49:49.600 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-13 23:49:49.601 +08:00 [DBG] Rendering check session result
+2019-04-14 00:05:16.089 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:05:16.095 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:05:16.096 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:05:16.098 +08:00 [DBG] Start discovery request
+2019-04-14 00:05:16.124 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:05:16.234 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 00:05:16.239 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 00:05:16.240 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 00:05:16.243 +08:00 [DBG] Start key discovery request
+2019-04-14 00:23:54.883 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:23:54.886 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:23:54.888 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:23:54.889 +08:00 [DBG] Start discovery request
+2019-04-14 00:23:54.912 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:23:55.032 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 00:23:55.036 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 00:23:55.037 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 00:23:55.038 +08:00 [DBG] Start key discovery request
+2019-04-14 00:31:16.539 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:31:16.541 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 00:31:16.551 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 00:31:16.553 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 00:31:16.554 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:31:16.555 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:31:16.556 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:31:16.557 +08:00 [DBG] Start discovery request
+2019-04-14 00:31:16.575 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:31:16.582 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:31:16.583 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 00:31:16.586 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 00:31:16.589 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 00:31:16.590 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:31:16.592 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:31:16.592 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:31:16.593 +08:00 [DBG] Start discovery request
+2019-04-14 00:31:16.599 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:31:16.818 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 00:31:16.820 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 00:31:16.820 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 00:31:16.821 +08:00 [DBG] Rendering check session result
+2019-04-14 00:31:16.829 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 00:31:16.831 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 00:31:16.832 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 00:31:16.833 +08:00 [DBG] Rendering check session result
+2019-04-14 00:37:10.917 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:37:10.921 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 00:37:10.926 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 00:37:10.927 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 00:37:10.928 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:37:10.929 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:37:10.931 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:37:10.932 +08:00 [DBG] Start discovery request
+2019-04-14 00:37:10.951 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:37:10.959 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:37:10.960 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 00:37:10.963 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 00:37:10.963 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 00:37:10.964 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:37:10.970 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:37:10.971 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:37:10.972 +08:00 [DBG] Start discovery request
+2019-04-14 00:37:10.976 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:37:11.173 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 00:37:11.177 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 00:37:11.178 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 00:37:11.179 +08:00 [DBG] Rendering check session result
+2019-04-14 00:37:11.182 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 00:37:11.183 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 00:37:11.184 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 00:37:11.190 +08:00 [DBG] Rendering check session result
+2019-04-14 00:41:27.319 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:41:27.321 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:41:27.322 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:41:27.322 +08:00 [DBG] Start discovery request
+2019-04-14 00:41:27.346 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:41:27.458 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 00:41:27.462 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 00:41:27.463 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 00:41:27.465 +08:00 [DBG] Start key discovery request
+2019-04-14 00:42:16.389 +08:00 [INF] Removing 0 grants
+2019-04-14 00:43:29.284 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:43:29.287 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:43:29.288 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:43:29.289 +08:00 [DBG] Start discovery request
+2019-04-14 00:43:29.315 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:43:29.419 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 00:43:29.421 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 00:43:29.423 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 00:43:29.425 +08:00 [DBG] Start key discovery request
+2019-04-14 00:44:29.042 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:44:29.044 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:44:29.045 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:44:29.046 +08:00 [DBG] Start discovery request
+2019-04-14 00:44:29.063 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:44:29.170 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 00:44:29.176 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 00:44:29.178 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 00:44:29.180 +08:00 [DBG] Start key discovery request
+2019-04-14 00:55:16.384 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:55:16.386 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:55:16.386 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:55:16.387 +08:00 [DBG] Start discovery request
+2019-04-14 00:55:16.415 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:55:16.527 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 00:55:16.535 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 00:55:16.536 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 00:55:16.539 +08:00 [DBG] Start key discovery request
+2019-04-14 00:55:28.935 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-04-14 00:55:28.940 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-04-14 00:55:28.942 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-04-14 00:55:28.944 +08:00 [DBG] Start authorize request
+2019-04-14 00:55:28.945 +08:00 [DBG] User in authorize request: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-14 00:55:28.946 +08:00 [DBG] Start authorize request protocol validation
+2019-04-14 00:55:28.981 +08:00 [DBG] js found in database: true
+2019-04-14 00:55:28.982 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 00:55:28.996 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 00:55:29.118 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 00:55:29.124 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 00:55:29.128 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 00:55:29.129 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-14 00:55:29.133 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","AllowedRedirectUris":["http://localhost:5003/callback.html","http://localhost:8080/static/callback.html","http://localhost:5000"],"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile role api1","State":"934c1f7fe5a643c4b3d3dd584ff43656","UiLocales":null,"Nonce":"b273dfa88d4d450ba34d3af925faceab","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"196427dba4d6029227d4647277c658db","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/static/callback.html","response_type":"id_token token","scope":"openid profile role api1","state":"934c1f7fe5a643c4b3d3dd584ff43656","nonce":"b273dfa88d4d450ba34d3af925faceab"},"$type":"AuthorizeRequestValidationLog"}
+2019-04-14 00:55:29.146 +08:00 [DBG] f66DJuJI0a63sYbB+AMjFUG43jpUuk7gum2GJENt5P8= found in database: true
+2019-04-14 00:55:29.150 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-04-14 00:55:29.151 +08:00 [DBG] Creating Implicit Flow response.
+2019-04-14 00:55:29.153 +08:00 [DBG] Getting claims for access token for client: js
+2019-04-14 00:55:29.154 +08:00 [DBG] Getting claims for access token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-14 00:55:29.173 +08:00 [DBG] Getting claims for identity token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1 and client: js
+2019-04-14 00:55:29.179 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-04-14 00:55:29.189 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","Endpoint":"Authorize","SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","Scopes":"openid profile role api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****TS7A","$type":"Token"},{"TokenType":"access_token","TokenValue":"****Fx-g","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLVM58EGD0D:00000001","TimeStamp":"2019-04-13T16:55:29.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-04-14 00:55:29.206 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ClientId":"js","RedirectUri":"http://localhost:8080/static/callback.html","State":"934c1f7fe5a643c4b3d3dd584ff43656","Scope":"openid profile role api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-04-14 00:55:29.440 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:55:29.442 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 00:55:29.446 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 00:55:29.447 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 00:55:29.448 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:55:29.449 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:55:29.450 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:55:29.451 +08:00 [DBG] Start discovery request
+2019-04-14 00:55:29.469 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:55:29.504 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:55:29.507 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:8080
+2019-04-14 00:55:29.509 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 00:55:29.510 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 00:55:29.511 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 00:55:29.512 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 00:55:29.512 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 00:55:29.513 +08:00 [DBG] Start key discovery request
+2019-04-14 00:55:29.545 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:55:29.555 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:55:29.555 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-04-14 00:55:29.557 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 00:55:29.558 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 00:55:29.561 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-04-14 00:55:29.562 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-04-14 00:55:29.563 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-04-14 00:55:29.564 +08:00 [DBG] Start userinfo request
+2019-04-14 00:55:29.565 +08:00 [DBG] Bearer token found in header
+2019-04-14 00:55:29.573 +08:00 [DBG] js found in database: true
+2019-04-14 00:55:29.573 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 00:55:29.580 +08:00 [DBG] js found in database: true
+2019-04-14 00:55:29.581 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 00:55:29.585 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-04-14 00:55:29.586 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1555174529,"exp":1555178129,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"js","sub":"a23e8a2b-b91b-434a-8270-69230f1246a1","auth_time":1555125514,"idp":"local","role":"admin","scope":["openid","profile","role","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-04-14 00:55:29.589 +08:00 [DBG] Creating userinfo response
+2019-04-14 00:55:29.590 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 00:55:29.596 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 00:55:29.599 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 00:55:29.600 +08:00 [DBG] Requested claim types: a b name rolel
+2019-04-14 00:55:29.600 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 00:55:29.603 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 00:55:29.607 +08:00 [INF] Profile service returned the following claim types: name
+2019-04-14 00:55:29.608 +08:00 [DBG] End userinfo request
+2019-04-14 00:55:29.624 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 00:55:29.625 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 00:55:29.627 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 00:55:29.628 +08:00 [DBG] Rendering check session result
+2019-04-14 00:55:31.006 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:55:31.009 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 00:55:31.012 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 00:55:31.013 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 00:55:31.014 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:55:31.015 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:55:31.017 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:55:31.024 +08:00 [DBG] Start discovery request
+2019-04-14 00:55:31.029 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:55:31.032 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 00:55:31.033 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 00:55:31.036 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 00:55:31.037 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 00:55:31.037 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 00:55:31.038 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 00:55:31.038 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 00:55:31.039 +08:00 [DBG] Start discovery request
+2019-04-14 00:55:31.043 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 00:55:31.270 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 00:55:31.273 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 00:55:31.274 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 00:55:31.274 +08:00 [DBG] Rendering check session result
+2019-04-14 00:55:31.276 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 00:55:31.277 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 00:55:31.278 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 00:55:31.279 +08:00 [DBG] Rendering check session result
+2019-04-14 01:42:16.413 +08:00 [INF] Removing 0 grants
+2019-04-14 01:50:58.704 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 01:50:58.707 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 01:50:58.708 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 01:50:58.709 +08:00 [DBG] Start discovery request
+2019-04-14 01:50:58.741 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 01:50:58.858 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 01:50:58.862 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 01:50:58.863 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 01:50:58.865 +08:00 [DBG] Start key discovery request
+2019-04-14 01:51:23.461 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 01:51:23.464 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 01:51:23.469 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 01:51:23.470 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 01:51:23.471 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 01:51:23.474 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 01:51:23.475 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 01:51:23.475 +08:00 [DBG] Start discovery request
+2019-04-14 01:51:23.481 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 01:51:23.491 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 01:51:23.493 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 01:51:23.495 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 01:51:23.495 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 01:51:23.496 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 01:51:23.502 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 01:51:23.503 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 01:51:23.504 +08:00 [DBG] Start discovery request
+2019-04-14 01:51:23.510 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 01:51:23.746 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 01:51:23.748 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 01:51:23.749 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 01:51:23.750 +08:00 [DBG] Rendering check session result
+2019-04-14 01:51:23.760 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 01:51:23.760 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 01:51:23.761 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 01:51:23.761 +08:00 [DBG] Rendering check session result
+2019-04-14 01:54:24.309 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 01:54:24.316 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 01:54:24.321 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 01:54:24.322 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 01:54:24.323 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 01:54:24.327 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 01:54:24.328 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 01:54:24.330 +08:00 [DBG] Start discovery request
+2019-04-14 01:54:24.362 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 01:54:24.367 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 01:54:24.367 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 01:54:24.369 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 01:54:24.370 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 01:54:24.370 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 01:54:24.371 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 01:54:24.373 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 01:54:24.382 +08:00 [DBG] Start discovery request
+2019-04-14 01:54:24.388 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 01:54:24.634 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 01:54:24.637 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 01:54:24.640 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 01:54:24.641 +08:00 [DBG] Rendering check session result
+2019-04-14 01:54:24.645 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 01:54:24.648 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 01:54:24.649 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 01:54:24.650 +08:00 [DBG] Rendering check session result
+2019-04-14 01:54:25.056 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 01:54:25.058 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 01:54:25.059 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 01:54:25.060 +08:00 [DBG] Start discovery request
+2019-04-14 01:54:25.064 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 01:54:25.199 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 01:54:25.203 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 01:54:25.205 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 01:54:25.206 +08:00 [DBG] Start key discovery request
+2019-04-14 02:15:23.578 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:15:23.581 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:15:23.582 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:15:23.583 +08:00 [DBG] Start discovery request
+2019-04-14 02:15:23.610 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:15:23.720 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 02:15:23.726 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 02:15:23.727 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 02:15:23.728 +08:00 [DBG] Start key discovery request
+2019-04-14 02:15:23.938 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-04-14 02:15:23.941 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-04-14 02:15:23.942 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-04-14 02:15:23.943 +08:00 [DBG] Start authorize request
+2019-04-14 02:15:23.944 +08:00 [DBG] User in authorize request: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-14 02:15:23.945 +08:00 [DBG] Start authorize request protocol validation
+2019-04-14 02:15:23.979 +08:00 [DBG] js found in database: true
+2019-04-14 02:15:23.981 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:15:23.996 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:15:24.126 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:15:24.131 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:15:24.135 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:15:24.135 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-14 02:15:24.136 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","AllowedRedirectUris":["http://localhost:5003/callback.html","http://localhost:8080/static/callback.html","http://localhost:5000"],"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile role api1","State":"44f87c7c7550483f99a90a2f9d3f0f67","UiLocales":null,"Nonce":"5fbf7718589c4f64a10c3f649904f15e","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"196427dba4d6029227d4647277c658db","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/static/callback.html","response_type":"id_token token","scope":"openid profile role api1","state":"44f87c7c7550483f99a90a2f9d3f0f67","nonce":"5fbf7718589c4f64a10c3f649904f15e"},"$type":"AuthorizeRequestValidationLog"}
+2019-04-14 02:15:24.152 +08:00 [DBG] f66DJuJI0a63sYbB+AMjFUG43jpUuk7gum2GJENt5P8= found in database: true
+2019-04-14 02:15:24.153 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-04-14 02:15:24.154 +08:00 [DBG] Creating Implicit Flow response.
+2019-04-14 02:15:24.154 +08:00 [DBG] Getting claims for access token for client: js
+2019-04-14 02:15:24.155 +08:00 [DBG] Getting claims for access token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-14 02:15:24.169 +08:00 [DBG] Getting claims for identity token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1 and client: js
+2019-04-14 02:15:24.171 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-04-14 02:15:24.177 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","Endpoint":"Authorize","SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","Scopes":"openid profile role api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****qvYA","$type":"Token"},{"TokenType":"access_token","TokenValue":"****cb1g","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLVM58EGD0P:00000001","TimeStamp":"2019-04-13T18:15:24.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-04-14 02:15:24.183 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ClientId":"js","RedirectUri":"http://localhost:8080/static/callback.html","State":"44f87c7c7550483f99a90a2f9d3f0f67","Scope":"openid profile role api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-04-14 02:15:24.401 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:15:24.403 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:15:24.407 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:15:24.408 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:15:24.409 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:15:24.411 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:15:24.411 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:15:24.416 +08:00 [DBG] Start discovery request
+2019-04-14 02:15:24.419 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:15:24.463 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:15:24.467 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:8080
+2019-04-14 02:15:24.469 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:15:24.469 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:15:24.470 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 02:15:24.470 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 02:15:24.471 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 02:15:24.471 +08:00 [DBG] Start key discovery request
+2019-04-14 02:15:24.504 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:15:24.509 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:15:24.510 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-04-14 02:15:24.512 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:15:24.513 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:15:24.513 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-04-14 02:15:24.514 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-04-14 02:15:24.518 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-04-14 02:15:24.519 +08:00 [DBG] Start userinfo request
+2019-04-14 02:15:24.519 +08:00 [DBG] Bearer token found in header
+2019-04-14 02:15:24.527 +08:00 [DBG] js found in database: true
+2019-04-14 02:15:24.530 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:15:24.534 +08:00 [DBG] js found in database: true
+2019-04-14 02:15:24.535 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:15:24.537 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-04-14 02:15:24.537 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1555179324,"exp":1555182924,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"js","sub":"a23e8a2b-b91b-434a-8270-69230f1246a1","auth_time":1555125514,"idp":"local","role":"admin","scope":["openid","profile","role","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-04-14 02:15:24.542 +08:00 [DBG] Creating userinfo response
+2019-04-14 02:15:24.542 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 02:15:24.543 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 02:15:24.546 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:15:24.547 +08:00 [DBG] Requested claim types: a b name rolel
+2019-04-14 02:15:24.548 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 02:15:24.549 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:15:24.556 +08:00 [INF] Profile service returned the following claim types: name
+2019-04-14 02:15:24.557 +08:00 [DBG] End userinfo request
+2019-04-14 02:15:24.577 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 02:15:24.580 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 02:15:24.581 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 02:15:24.582 +08:00 [DBG] Rendering check session result
+2019-04-14 02:15:25.915 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:15:25.918 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:15:25.921 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:15:25.923 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:15:25.924 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:15:25.925 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:15:25.926 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:15:25.930 +08:00 [DBG] Start discovery request
+2019-04-14 02:15:25.934 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:15:25.936 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:15:25.937 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:15:25.938 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:15:25.944 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:15:25.946 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:15:25.946 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:15:25.947 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:15:25.948 +08:00 [DBG] Start discovery request
+2019-04-14 02:15:25.953 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:15:26.178 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 02:15:26.181 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 02:15:26.182 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 02:15:26.182 +08:00 [DBG] Rendering check session result
+2019-04-14 02:15:26.184 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 02:15:26.185 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 02:15:26.185 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 02:15:26.186 +08:00 [DBG] Rendering check session result
+2019-04-14 02:17:51.706 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:17:51.708 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:17:51.713 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:17:51.713 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:17:51.714 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:17:51.715 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:17:51.717 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:17:51.723 +08:00 [DBG] Start discovery request
+2019-04-14 02:17:51.743 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:17:51.749 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:17:51.751 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:17:51.753 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:17:51.755 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:17:51.758 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:17:51.759 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:17:51.760 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:17:51.760 +08:00 [DBG] Start discovery request
+2019-04-14 02:17:51.765 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:17:51.842 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 02:17:51.846 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 02:17:51.847 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 02:17:51.848 +08:00 [DBG] Rendering check session result
+2019-04-14 02:17:51.851 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 02:17:51.852 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 02:17:51.853 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 02:17:51.854 +08:00 [DBG] Rendering check session result
+2019-04-14 02:17:54.289 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:17:54.291 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:17:54.293 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:17:54.294 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:17:54.295 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:17:54.296 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:17:54.296 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:17:54.297 +08:00 [DBG] Start discovery request
+2019-04-14 02:17:54.300 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:17:54.304 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:17:54.305 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:17:54.306 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:17:54.307 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:17:54.308 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:17:54.309 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:17:54.309 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:17:54.310 +08:00 [DBG] Start discovery request
+2019-04-14 02:17:54.310 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 02:17:54.313 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:17:54.315 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 02:17:54.317 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 02:17:54.318 +08:00 [DBG] Rendering check session result
+2019-04-14 02:17:54.326 +08:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-04-14 02:17:54.327 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-04-14 02:17:54.328 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-04-14 02:17:54.329 +08:00 [DBG] Processing signout request for a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-14 02:17:54.329 +08:00 [DBG] Start end session request validation
+2019-04-14 02:17:54.330 +08:00 [INF] End session request validation success
+{"ClientId":null,"ClientName":null,"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","PostLogOutUri":null,"State":null,"Raw":{"post_logout_redirect_uri":"http://localhost:5000"},"$type":"EndSessionRequestValidationLog"}
+2019-04-14 02:17:54.331 +08:00 [DBG] Success validating end session request from null
+2019-04-14 02:17:55.844 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:17:55.848 +08:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-04-14 02:17:55.851 +08:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-04-14 02:17:55.852 +08:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-04-14 02:17:55.852 +08:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-04-14 02:17:55.853 +08:00 [INF] {"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","DisplayName":"Alice Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLLVM58EGD0T:00000006","TimeStamp":"2019-04-13T18:17:55.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-04-14 02:17:55.883 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-04-14 02:17:55.886 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-04-14 02:17:55.887 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-04-14 02:17:55.889 +08:00 [DBG] Processing signout callback request
+2019-04-14 02:17:55.932 +08:00 [DBG] js found in database: true
+2019-04-14 02:17:55.932 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:17:55.935 +08:00 [DBG] No client front-channel logout URLs
+2019-04-14 02:17:55.936 +08:00 [DBG] No client back-channel logout URLs
+2019-04-14 02:17:55.937 +08:00 [INF] Successful signout callback.
+2019-04-14 02:17:55.938 +08:00 [DBG] No client front-channel iframe urls
+2019-04-14 02:17:55.939 +08:00 [DBG] No client back-channel iframe urls
+2019-04-14 02:18:06.132 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:18:06.134 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:18:06.136 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:18:06.137 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:18:06.138 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:18:06.141 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:18:06.148 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:18:06.150 +08:00 [DBG] Start discovery request
+2019-04-14 02:18:06.156 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:18:06.182 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-04-14 02:18:06.186 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-04-14 02:18:06.187 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-04-14 02:18:06.188 +08:00 [DBG] Start authorize request
+2019-04-14 02:18:06.189 +08:00 [DBG] No user present in authorize request
+2019-04-14 02:18:06.190 +08:00 [DBG] Start authorize request protocol validation
+2019-04-14 02:18:06.198 +08:00 [DBG] js found in database: true
+2019-04-14 02:18:06.199 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:18:06.216 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:06.341 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:18:06.348 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:06.353 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:18:06.357 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-14 02:18:06.359 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","AllowedRedirectUris":["http://localhost:5003/callback.html","http://localhost:8080/static/callback.html","http://localhost:5000"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile role api1","State":"49965265b46a4f1b865e44e487453212","UiLocales":null,"Nonce":"13a9002928814ebdb5e542d7e1723a28","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/static/callback.html","response_type":"id_token token","scope":"openid profile role api1","state":"49965265b46a4f1b865e44e487453212","nonce":"13a9002928814ebdb5e542d7e1723a28"},"$type":"AuthorizeRequestValidationLog"}
+2019-04-14 02:18:06.370 +08:00 [INF] Showing login: User is not authenticated
+2019-04-14 02:18:06.376 +08:00 [DBG] Start authorize request protocol validation
+2019-04-14 02:18:06.382 +08:00 [DBG] js found in database: true
+2019-04-14 02:18:06.383 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:18:06.386 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:06.390 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:18:06.393 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:06.397 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:18:06.398 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-14 02:18:06.402 +08:00 [DBG] js found in database: true
+2019-04-14 02:18:06.403 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:18:13.150 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:18:13.152 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-04-14 02:18:13.154 +08:00 [DBG] Start authorize request protocol validation
+2019-04-14 02:18:13.184 +08:00 [DBG] js found in database: true
+2019-04-14 02:18:13.185 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:18:13.196 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:13.317 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:18:13.329 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:13.432 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:18:13.436 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-14 02:18:13.468 +08:00 [DBG] Augmenting SignInContext
+2019-04-14 02:18:13.469 +08:00 [DBG] Adding idp claim with value: local
+2019-04-14 02:18:13.470 +08:00 [DBG] Adding amr claim with value: pwd
+2019-04-14 02:18:13.471 +08:00 [DBG] Adding auth_time claim with value: 1555179493
+2019-04-14 02:18:13.471 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-04-14 02:18:13.473 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","DisplayName":"admin","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLLVM58EGD0T:0000000B","TimeStamp":"2019-04-13T18:18:13.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-04-14 02:18:13.503 +08:00 [DBG] js found in database: true
+2019-04-14 02:18:13.505 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:18:13.514 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-04-14 02:18:13.518 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-04-14 02:18:13.519 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-04-14 02:18:13.520 +08:00 [DBG] Start authorize callback request
+2019-04-14 02:18:13.521 +08:00 [DBG] User in authorize request: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-14 02:18:13.521 +08:00 [DBG] Start authorize request protocol validation
+2019-04-14 02:18:13.526 +08:00 [DBG] js found in database: true
+2019-04-14 02:18:13.526 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:18:13.531 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:13.536 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:18:13.538 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:13.542 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 02:18:13.544 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-14 02:18:13.545 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","AllowedRedirectUris":["http://localhost:5003/callback.html","http://localhost:8080/static/callback.html","http://localhost:5000"],"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile role api1","State":"49965265b46a4f1b865e44e487453212","UiLocales":null,"Nonce":"13a9002928814ebdb5e542d7e1723a28","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"dc26a1b7a5a5601e7ed704ac7dd3a364","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/static/callback.html","response_type":"id_token token","scope":"openid profile role api1","state":"49965265b46a4f1b865e44e487453212","nonce":"13a9002928814ebdb5e542d7e1723a28"},"$type":"AuthorizeRequestValidationLog"}
+2019-04-14 02:18:13.561 +08:00 [DBG] f66DJuJI0a63sYbB+AMjFUG43jpUuk7gum2GJENt5P8= found in database: true
+2019-04-14 02:18:13.562 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-04-14 02:18:13.563 +08:00 [DBG] Creating Implicit Flow response.
+2019-04-14 02:18:13.563 +08:00 [DBG] Getting claims for access token for client: js
+2019-04-14 02:18:13.564 +08:00 [DBG] Getting claims for access token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-14 02:18:13.579 +08:00 [DBG] Getting claims for identity token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1 and client: js
+2019-04-14 02:18:13.580 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-04-14 02:18:13.586 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","Endpoint":"Authorize","SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","Scopes":"openid profile role api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****XSAg","$type":"Token"},{"TokenType":"access_token","TokenValue":"****3u5g","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLVM58EGD0T:0000000C","TimeStamp":"2019-04-13T18:18:13.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-04-14 02:18:13.589 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ClientId":"js","RedirectUri":"http://localhost:8080/static/callback.html","State":"49965265b46a4f1b865e44e487453212","Scope":"openid profile role api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-04-14 02:18:13.594 +08:00 [DBG] Augmenting SignInContext
+2019-04-14 02:18:13.595 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-04-14 02:18:14.067 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:18:14.069 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:18:14.072 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:18:14.073 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:18:14.074 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:18:14.075 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:18:14.075 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:18:14.076 +08:00 [DBG] Start discovery request
+2019-04-14 02:18:14.098 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:18:14.105 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:18:14.106 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:8080
+2019-04-14 02:18:14.110 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:18:14.111 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:18:14.111 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 02:18:14.112 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 02:18:14.113 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 02:18:14.113 +08:00 [DBG] Start key discovery request
+2019-04-14 02:18:14.142 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:18:14.146 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:18:14.147 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-04-14 02:18:14.150 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:18:14.151 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:18:14.152 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-04-14 02:18:14.152 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-04-14 02:18:14.156 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-04-14 02:18:14.157 +08:00 [DBG] Start userinfo request
+2019-04-14 02:18:14.158 +08:00 [DBG] Bearer token found in header
+2019-04-14 02:18:14.193 +08:00 [DBG] js found in database: true
+2019-04-14 02:18:14.193 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:18:14.199 +08:00 [DBG] js found in database: true
+2019-04-14 02:18:14.200 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 02:18:14.204 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-04-14 02:18:14.208 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1555179493,"exp":1555183093,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"js","sub":"a23e8a2b-b91b-434a-8270-69230f1246a1","auth_time":1555179493,"idp":"local","role":"admin","scope":["openid","profile","role","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-04-14 02:18:14.221 +08:00 [DBG] Creating userinfo response
+2019-04-14 02:18:14.221 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 02:18:14.222 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 02:18:14.233 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:14.234 +08:00 [DBG] Requested claim types: a b name rolel
+2019-04-14 02:18:14.235 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 02:18:14.238 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 02:18:14.251 +08:00 [INF] Profile service returned the following claim types: name
+2019-04-14 02:18:14.253 +08:00 [DBG] End userinfo request
+2019-04-14 02:18:14.278 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 02:18:14.280 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 02:18:14.281 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 02:18:14.281 +08:00 [DBG] Rendering check session result
+2019-04-14 02:18:14.632 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:18:14.634 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:18:14.637 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:18:14.638 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:18:14.639 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:18:14.640 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:18:14.640 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:18:14.641 +08:00 [DBG] Start discovery request
+2019-04-14 02:18:14.661 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:18:14.664 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 02:18:14.665 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 02:18:14.666 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 02:18:14.667 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 02:18:14.667 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 02:18:14.668 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 02:18:14.669 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 02:18:14.670 +08:00 [DBG] Start discovery request
+2019-04-14 02:18:14.674 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 02:18:14.680 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 02:18:14.681 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 02:18:14.681 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 02:18:14.682 +08:00 [DBG] Rendering check session result
+2019-04-14 02:18:14.684 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 02:18:14.686 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 02:18:14.688 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 02:18:14.689 +08:00 [DBG] Rendering check session result
+2019-04-14 02:42:16.425 +08:00 [INF] Removing 0 grants
+2019-04-14 03:23:21.493 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-04-14 03:23:21.497 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-04-14 03:23:21.499 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-04-14 03:23:21.500 +08:00 [DBG] Start authorize request
+2019-04-14 03:23:21.501 +08:00 [DBG] User in authorize request: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-14 03:23:21.502 +08:00 [DBG] Start authorize request protocol validation
+2019-04-14 03:23:21.539 +08:00 [DBG] js found in database: true
+2019-04-14 03:23:21.539 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 03:23:21.551 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 03:23:21.664 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 03:23:21.668 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 03:23:21.674 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-04-14 03:23:21.678 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-04-14 03:23:21.679 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","AllowedRedirectUris":["http://localhost:5003/callback.html","http://localhost:8080/static/callback.html","http://localhost:5000"],"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile role api1","State":"bb5dbf41ed5f401d8c59802cf345bc7b","UiLocales":null,"Nonce":"2b263e0118b946c2b880c444be716064","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"dc26a1b7a5a5601e7ed704ac7dd3a364","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/static/callback.html","response_type":"id_token token","scope":"openid profile role api1","state":"bb5dbf41ed5f401d8c59802cf345bc7b","nonce":"2b263e0118b946c2b880c444be716064"},"$type":"AuthorizeRequestValidationLog"}
+2019-04-14 03:23:21.700 +08:00 [DBG] f66DJuJI0a63sYbB+AMjFUG43jpUuk7gum2GJENt5P8= found in database: true
+2019-04-14 03:23:21.702 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-04-14 03:23:21.709 +08:00 [DBG] Creating Implicit Flow response.
+2019-04-14 03:23:21.710 +08:00 [DBG] Getting claims for access token for client: js
+2019-04-14 03:23:21.711 +08:00 [DBG] Getting claims for access token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1
+2019-04-14 03:23:21.728 +08:00 [DBG] Getting claims for identity token for subject: a23e8a2b-b91b-434a-8270-69230f1246a1 and client: js
+2019-04-14 03:23:21.729 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-04-14 03:23:21.740 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/static/callback.html","Endpoint":"Authorize","SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","Scopes":"openid profile role api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****VQqg","$type":"Token"},{"TokenType":"access_token","TokenValue":"****vcpw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLLVM58EGD10:00000001","TimeStamp":"2019-04-13T19:23:21.0000000Z","ProcessId":17860,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-04-14 03:23:21.759 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"a23e8a2b-b91b-434a-8270-69230f1246a1","ClientId":"js","RedirectUri":"http://localhost:8080/static/callback.html","State":"bb5dbf41ed5f401d8c59802cf345bc7b","Scope":"openid profile role api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-04-14 03:23:21.969 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 03:23:21.974 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 03:23:21.980 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 03:23:21.982 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 03:23:21.983 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 03:23:21.986 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 03:23:21.988 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 03:23:21.988 +08:00 [DBG] Start discovery request
+2019-04-14 03:23:22.009 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 03:23:22.017 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 03:23:22.019 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:8080
+2019-04-14 03:23:22.024 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 03:23:22.025 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 03:23:22.026 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-04-14 03:23:22.026 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-04-14 03:23:22.028 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-04-14 03:23:22.029 +08:00 [DBG] Start key discovery request
+2019-04-14 03:23:22.068 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 03:23:22.074 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 03:23:22.075 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-04-14 03:23:22.078 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 03:23:22.079 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 03:23:22.080 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-04-14 03:23:22.083 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-04-14 03:23:22.083 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-04-14 03:23:22.084 +08:00 [DBG] Start userinfo request
+2019-04-14 03:23:22.084 +08:00 [DBG] Bearer token found in header
+2019-04-14 03:23:22.094 +08:00 [DBG] js found in database: true
+2019-04-14 03:23:22.095 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 03:23:22.101 +08:00 [DBG] js found in database: true
+2019-04-14 03:23:22.102 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-04-14 03:23:22.104 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-04-14 03:23:22.105 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1555183401,"exp":1555187001,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"js","sub":"a23e8a2b-b91b-434a-8270-69230f1246a1","auth_time":1555179493,"idp":"local","role":"admin","scope":["openid","profile","role","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-04-14 03:23:22.110 +08:00 [DBG] Creating userinfo response
+2019-04-14 03:23:22.111 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 03:23:22.111 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 03:23:22.114 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 03:23:22.118 +08:00 [DBG] Requested claim types: a b name rolel
+2019-04-14 03:23:22.118 +08:00 [DBG] Scopes in access token: openid profile role api1
+2019-04-14 03:23:22.121 +08:00 [DBG] Found ["openid","profile","role"] identity scopes in database
+2019-04-14 03:23:22.127 +08:00 [INF] Profile service returned the following claim types: name
+2019-04-14 03:23:22.128 +08:00 [DBG] End userinfo request
+2019-04-14 03:23:22.152 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 03:23:22.157 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 03:23:22.159 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 03:23:22.160 +08:00 [DBG] Rendering check session result
+2019-04-14 03:23:22.751 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 03:23:22.754 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 03:23:22.756 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 03:23:22.757 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 03:23:22.758 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 03:23:22.759 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 03:23:22.760 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 03:23:22.761 +08:00 [DBG] Start discovery request
+2019-04-14 03:23:22.776 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 03:23:22.779 +08:00 [WRN] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-04-14 03:23:22.782 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-04-14 03:23:22.784 +08:00 [DBG] Origin http://localhost:8080 is allowed: true
+2019-04-14 03:23:22.785 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-04-14 03:23:22.786 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-04-14 03:23:22.787 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-04-14 03:23:22.788 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-04-14 03:23:22.789 +08:00 [DBG] Start discovery request
+2019-04-14 03:23:22.789 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 03:23:22.794 +08:00 [DBG] Found ["openid","profile","role","api1"] as all scopes in database
+2019-04-14 03:23:22.795 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 03:23:22.798 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 03:23:22.799 +08:00 [DBG] Rendering check session result
+2019-04-14 03:23:22.806 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-04-14 03:23:22.806 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-04-14 03:23:22.807 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-04-14 03:23:22.808 +08:00 [DBG] Rendering check session result
+2019-04-14 03:42:16.443 +08:00 [INF] Removing 0 grants
