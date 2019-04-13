@@ -13,21 +13,21 @@ namespace IdentityServer4.Admin.Api.Controllers
     /// <summary>
     /// 
     /// </summary>
-    [Authorize(Roles = "admin")]
-    public class ConfigurationController: WebApiController
+   // [Authorize(Roles = "admin")]
+    public class ClientController: WebApiController
     {
         /// <summary>
         /// ClientService
         /// </summary>
-        private readonly ClientService clientService;
+        private readonly ClientService service;
 
         /// <summary>
         /// 构造函数
         /// </summary>
-        /// <param name="clientService"></param>
-        public ConfigurationController(ClientService clientService)
+        /// <param name="service"></param>
+        public ClientController(ClientService service)
         {
-            this.clientService = clientService;
+            this.service = service;
         }
 
         #region 客户端
@@ -38,51 +38,52 @@ namespace IdentityServer4.Admin.Api.Controllers
         /// </summary>
         /// <param name="id"></param>
         [HttpGet]
-        [Route("/api/Configuration/client")]
-        public void Client(int? id)
+        [Route("/api/IdentityServer/Client/GetClient")]
+        public IActionResult GetClient(int? id)
         {
-
+            ClientDto clientDto = this.service.GetClient(id);
+            return Success(clientDto);
         }
 
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/Configuration/client/create")]
-        public IActionResult CreateClient([FromBody][CustomizeValidator(RuleSet ="name")]ClientDto model)
+        [Route("/api/IdentityServer/Client/AddClient")]
+        public IActionResult AddClient([FromBody][CustomizeValidator(RuleSet ="name")]ClientDto clientDto)
         {
-            this.clientService.CreateClient(model);
+            this.service.AddClient(clientDto);
             return Success();
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/Configuration/client/name")]
+        [Route("/api/IdentityServer/client/name")]
         public IActionResult UpdateClientName(int id,[FromBody][CustomizeValidator(RuleSet = "name")]ClientDto model)
         {
             return Success();
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/Configuration/client/basic")]
+        [Route("/api/IdentityServer/client/basic")]
         public IActionResult UpdateClientBasic(int id,[FromBody][CustomizeValidator(RuleSet = "basic")]ClientDto model)
         {
             return Success();
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/configuration/client/authorization")]
+        [Route("/api/IdentityServer/client/authorization")]
         public IActionResult UpdateClientAuthorization(int id, [FromBody][CustomizeValidator(RuleSet = "authorization")]ClientDto model)
         {
             return Success();
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/Configuration/client/token")]
+        [Route("/api/IdentityServer/client/token")]
         public IActionResult UpdateClientToken(int id, [FromBody][CustomizeValidator(RuleSet = "token")]ClientDto model)
         {
             return Success();
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/Configuration/client/device_flow")]
+        [Route("/api/IdentityServer/client/device_flow")]
         public IActionResult UpdateClientDeviceFlow(int id, [FromBody][CustomizeValidator(RuleSet = "device_flow")]ClientDto model)
         {
             return Success();
@@ -93,7 +94,7 @@ namespace IdentityServer4.Admin.Api.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("/api/Configuration/client")]
+        [Route("/api/IdentityServer/client")]
         public IActionResult DeleteClient(int id)
         {
             return Success();

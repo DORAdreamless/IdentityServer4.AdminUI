@@ -11,7 +11,7 @@ namespace IdentityServer4.Admin.Api.Helpers
 		{
 			var selectItems = Enum.GetValues(typeof(T))
 				.Cast<T>()
-				.Select(x => new SelectItem(Convert.ToInt16(x).ToString(), x.ToString())).ToList();
+				.Select(x => new SelectItem(Convert.ToInt16(x), x.ToString())).ToList();
 
 			return selectItems;
 		}

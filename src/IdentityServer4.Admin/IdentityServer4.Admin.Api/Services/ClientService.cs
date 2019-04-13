@@ -17,7 +17,7 @@ namespace IdentityServer4.Admin.Api.Services
         {
         }
 
-        public void CreateClient(ClientDto clientDto)
+        public void AddClient(ClientDto clientDto)
         {
             Client client = clientDto.ToEntity();
             this.Session.Save(client);
@@ -34,6 +34,23 @@ namespace IdentityServer4.Admin.Api.Services
             client.ClientId = clientDto.ClientId;
             this.Session.Update(client);
             this.Session.Flush();
+        }
+
+        public ClientDto GetClient(int? id)
+        {
+            ClientDto clientDto = new ClientDto();
+            if (!id.HasValue)
+            {
+                return clientDto;
+            }
+            if (id.Value <= 0)
+            {
+                return clientDto;
+            }
+           Client client= this.Session.Get<Client>(id.Value);
+            if (client == null)
+                return clientDto;
+            return client.ToModel(clientDto);
         }
 
         public void Delete(int id)

@@ -62,7 +62,7 @@ export default {
       ClientSecret: {
         Type: "SharedSecret",
         Value: "",
-        HashType: enums.HashType.const.Sha256,
+        HashType: [],
         Description: "",
         Expiration: null,
         ClientId: 0

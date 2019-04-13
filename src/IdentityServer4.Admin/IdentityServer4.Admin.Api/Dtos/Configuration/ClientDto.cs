@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using IdentityServer4.Admin.Api.Enums;
+using IdentityServer4.Admin.Api.Helpers;
 using IdentityServer4.Admin.Api.Infrastructure.UI;
+using IdentityServer4.Models;
 
 namespace IdentityServer4.Admin.Api.Dtos.Configuration
 {
@@ -19,9 +21,27 @@ namespace IdentityServer4.Admin.Api.Dtos.Configuration
             Claims = new List<ClientClaimDto>();
             ClientSecrets = new List<ClientSecretDto>();
             Properties = new List<ClientPropertyDto>();
+
+            ClientTypeList = new List<SelectItem>();
+            ClientTypeList.AddRange(EnumHelpers.ToSelectList<ClientType>());
+
+            AccessTokenTypes = new List<SelectItem>();
+            AccessTokenTypes.AddRange(EnumHelpers.ToSelectList<AccessTokenType>());
+
+            ProtocolTypes = new List<SelectItem>();
+            ProtocolTypes.AddRange(Dtos.Constants.ClientConsts.GetProtocolTypes());
+
+            RefreshTokenUsages = new List<SelectItem>();
+            RefreshTokenUsages.AddRange(EnumHelpers.ToSelectList<TokenUsage>());
+
+            RefreshTokenExpirations = new List<SelectItem>();
+            RefreshTokenExpirations.AddRange(EnumHelpers.ToSelectList<TokenExpiration>());
+         
         }
 
-        public ClientType ClientType { get; set; }
+        public List<SelectItem> ClientTypeList { get; set; }
+
+        public ClientType ClientType { get; set; } = ClientType.Empty;
 
         public int AbsoluteRefreshTokenLifetime { get; set; } = 2592000;
         public int AccessTokenLifetime { get; set; } = 3600;

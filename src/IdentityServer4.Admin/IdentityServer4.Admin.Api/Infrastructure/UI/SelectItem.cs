@@ -4,7 +4,7 @@ namespace IdentityServer4.Admin.Api.Infrastructure.UI
 {
     public class SelectItem
     {
-        public SelectItem( string value,string label)
+        public SelectItem(object value,string label)
         {
             Label = label;
             Value = value;
@@ -13,6 +13,6 @@ namespace IdentityServer4.Admin.Api.Infrastructure.UI
         [JsonProperty("label")]
         public string Label { get; set; }
         [JsonProperty("value")]
-        public string Value { get; set; }
+        public object Value { get; set; }
     }
 }

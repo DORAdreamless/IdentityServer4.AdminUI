@@ -15,9 +15,9 @@ namespace IdentityServer4.Admin.Api.Mappers
 
         internal static IMapper Mapper { get; }
 
-        public static ClientDto ToModel(this Client client)
+        public static ClientDto ToModel(this Client client,ClientDto clientDto)
         {
-            return Mapper.Map<ClientDto>(client);
+            return Mapper.Map<Client,ClientDto>(client, clientDto);
         }
 
         //public static ClientSecretsDto ToModel(this PagedList<ClientSecret> clientSecret)

@@ -9,16 +9,12 @@ export const GetClientByPage = function (pageParam) {
     })
 }
 
-export const GetOne = function (Id) {
-    return axios({
-        url: `${base}/api/IdentityServer/Client/GetOne?Id=${Id}`,
-        method: 'GET'
-    })
-}
+
 
 export const GetOneForEdit = function (Id) {
+    Id=Id||'';
     return axios({
-        url: `${base}/api/IdentityServer/Client/GetOneForEdit?Id=${Id}`,
+        url: `${base}/api/IdentityServer/Client/GetClient?Id=${Id}`,
         method: 'GET'
     })
 }

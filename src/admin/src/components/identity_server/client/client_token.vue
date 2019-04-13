@@ -272,9 +272,9 @@ export default {
       dialogClaimVisible: false,
       ClientClaims: [],
       options: {
-        AccessTokenTypeList: enums.AccessTokenType.items || [],
-        RefreshTokenUsageList: enums.TokenUsage.items || [],
-        RefreshTokenExpirationList: enums.TokenExpiration.items || []
+        AccessTokenTypeList:  [],
+        RefreshTokenUsageList:  [],
+        RefreshTokenExpirationList: []
       },
       formModel: {
         AllowedCorsOrigin: ""

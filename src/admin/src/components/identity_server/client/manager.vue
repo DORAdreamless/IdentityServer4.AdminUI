@@ -27,7 +27,7 @@
       <el-form-item label="应用类型" prop="ClientType">
         <el-select clearable v-model="ClientModel.ClientType" placeholder="请选择">
           <el-option
-            v-for="item in options.ClientTypeList"
+            v-for="item in ClientModel.ClientTypeList"
             :key="item.value"
             :label="item.label"
             :value="item.value"
@@ -124,13 +124,6 @@ export default {
     return {
       Id: 0, //主键
       active: 0,
-      options: {
-        ClientCategoryList: [],
-        ClientTypeList: enums.ClientType.items || [],
-        AccessTokenTypeList: enums.AccessTokenType.items || [],
-        RefreshTokenUsageList: enums.TokenUsage.items || [],
-        RefreshTokenExpirationList: enums.TokenExpiration.items || []
-      },
       ClientModelRules: {
         ClientCategoryId: [
           { required: true, message: "请选择应用分类", trigger: "change" }
@@ -167,7 +160,7 @@ export default {
         ClientId: "",
         ClientName: "",
         Description: "",
-        ClientType: enums.ClientType.const.Spa,
+        ClientType: 0,
         WantAuthentication: true,
         WantRealNameAuthentication: true,
         ClientUri: "",
@@ -254,9 +247,6 @@ export default {
     },
     getClientById: function() {
       let that = this;
-      if (!(that.Id > 0)) {
-        return;
-      }
       GetOneForEdit(that.Id).then(function(result) {
         if (result.success) {
           that.ClientModel = Object.assign(that.ClientModel, result.data);
