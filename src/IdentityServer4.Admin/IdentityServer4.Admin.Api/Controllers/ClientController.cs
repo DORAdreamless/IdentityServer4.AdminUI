@@ -1,5 +1,8 @@
 ﻿using FluentValidation.AspNetCore;
 using IdentityServer4.Admin.Api.Dtos.Configuration;
+using IdentityServer4.Admin.Api.Dtos.Requests;
+using IdentityServer4.Admin.Api.Entities;
+using IdentityServer4.Admin.Api.Infrastructure.UI;
 using IdentityServer4.Admin.Api.Infrastructure.WebApi.Controllers;
 using IdentityServer4.Admin.Api.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -32,7 +35,13 @@ namespace IdentityServer4.Admin.Api.Controllers
 
         #region 客户端
 
-
+        [HttpPost]
+        [Route("/api/IdentityServer/Client/GetClientByPage")]
+        public IActionResult GetClientByPage([FromBody]ClientPageRequest pageRequest)
+        {
+            PageList< ClientListDto> clientDto = this.service.GetRecordByPage<Client,ClientListDto>(pageRequest);
+            return Success(clientDto);
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -55,37 +64,50 @@ namespace IdentityServer4.Admin.Api.Controllers
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/IdentityServer/client/name")]
-        public IActionResult UpdateClientName(int id,[FromBody][CustomizeValidator(RuleSet = "name")]ClientDto model)
+        [Route("/api/IdentityServer/Client/UpdateClientName")]
+        public IActionResult UpdateClientName(int id,[FromBody][CustomizeValidator(RuleSet = "name")]ClientDto clientDto)
         {
+            this.service.UpdateClientName(id, clientDto);
             return Success();
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/IdentityServer/client/basic")]
-        public IActionResult UpdateClientBasic(int id,[FromBody][CustomizeValidator(RuleSet = "basic")]ClientDto model)
+        [Route("/api/IdentityServer/Client/UpdateClientConsent")]
+        public IActionResult UpdateClientConsent(int id, [FromBody][CustomizeValidator(RuleSet = "name")]ClientDto clientDto)
         {
+            this.service.UpdateClientConsent(id, clientDto);
             return Success();
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/IdentityServer/client/authorization")]
-        public IActionResult UpdateClientAuthorization(int id, [FromBody][CustomizeValidator(RuleSet = "authorization")]ClientDto model)
+        [Route("/api/IdentityServer/Client/UpdateClientBasic")]
+        public IActionResult UpdateClientBasic(int id,[FromBody][CustomizeValidator(RuleSet = "basic")]ClientDto clientDto)
         {
+            this.service.UpdateClientBasic(id, clientDto);
             return Success();
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/IdentityServer/client/token")]
-        public IActionResult UpdateClientToken(int id, [FromBody][CustomizeValidator(RuleSet = "token")]ClientDto model)
+        [Route("/api/IdentityServer/Client/UpdateClientAuthorization")]
+        public IActionResult UpdateClientAuthorization(int id, [FromBody][CustomizeValidator(RuleSet = "authorization")]ClientDto clientDto)
         {
+            this.service.UpdateClientAuthorization(id, clientDto);
             return Success();
         }
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/IdentityServer/client/device_flow")]
-        public IActionResult UpdateClientDeviceFlow(int id, [FromBody][CustomizeValidator(RuleSet = "device_flow")]ClientDto model)
+        [Route("/api/IdentityServer/Client/UpdateClientToken")]
+        public IActionResult UpdateClientToken(int id, [FromBody][CustomizeValidator(RuleSet = "token")]ClientDto clientDto)
         {
+            this.service.UpdateClientToken(id, clientDto);
+            return Success();
+        }
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("/api/IdentityServer/Client/UpdateClientDeviceFlow")]
+        public IActionResult UpdateClientDeviceFlow(int id, [FromBody][CustomizeValidator(RuleSet = "device_flow")]ClientDto clientDto)
+        {
+            this.service.UpdateClientDeviceFlow(id, clientDto);
             return Success();
         }
         /// <summary>
@@ -94,9 +116,10 @@ namespace IdentityServer4.Admin.Api.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("/api/IdentityServer/client")]
+        [Route("/api/IdentityServer/Client/DeleteClient")]
         public IActionResult DeleteClient(int id)
         {
+            this.service.DeleteClient(id);
             return Success();
         }
         #endregion

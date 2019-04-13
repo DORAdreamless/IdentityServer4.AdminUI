@@ -116,7 +116,7 @@
 import util from "../../../common/util";
 import {
   GetOneForEdit,
-  UpdateAuthoriztionClient
+  UpdateClientAuthorization
 } from "../../../api/identity_server/client";
 export default {
   name: "ClientAuthoriztion",
@@ -133,13 +133,7 @@ export default {
         IdentityProviderRestrictions: [],
         UserSsoLifetime: null
       },
-      options: {
-        ClientCategoryList: [],
-        ClientTypeList: enums.ClientType.items || [],
-        AccessTokenTypeList: enums.AccessTokenType.items || [],
-        RefreshTokenUsageList: enums.TokenUsage.items || [],
-        RefreshTokenExpirationList: enums.TokenExpiration.items || []
-      },
+     
       ClientModelRules: {},
       formModel: {
         PostLogoutRedirectUri: "",
@@ -201,7 +195,7 @@ export default {
         }
         let params = Object.assign({}, that.ClientModel);
 
-        UpdateAuthoriztionClient(that.Id, params).then(function(result) {
+        UpdateClientAuthorization(that.Id, params).then(function(result) {
           if (result.success) {
             that.$emit("onSetup", 3);
           }

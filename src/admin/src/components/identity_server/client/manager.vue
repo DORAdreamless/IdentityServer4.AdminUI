@@ -99,12 +99,9 @@
 <script>
 import util from "../../../common/util";
 import {
-  CreateClient,
-  UpdateNameClient,
-  GetOneForEdit,
-  UpdateBasicClient,
-  UpdateAuthoriztionClient,
-  UpdateTokenClient
+  AddClient,
+  UpdateClientName,
+  GetOneForEdit
 } from "../../../api/identity_server/client";
 import ClientToken from "./client_token";
 import ClientConsent from "./client_consent";
@@ -218,7 +215,7 @@ export default {
         let params = Object.assign({}, that.ClientModel);
 
         if (that.Id > 0) {
-          UpdateNameClient(that.Id, params).then(function(result) {
+          UpdateClientName(that.Id, params).then(function(result) {
             if (result.success) {
               if (!complete) {
                 that.getClientById();
@@ -231,7 +228,7 @@ export default {
             }
           });
         } else {
-          CreateClient(params).then(function(result) {
+          AddClient(params).then(function(result) {
             if (result.success) {
               that.Id = result.data;
               that.$router.push({

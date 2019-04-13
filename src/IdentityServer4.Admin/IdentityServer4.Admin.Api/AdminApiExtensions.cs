@@ -46,6 +46,7 @@ namespace IdentityServer4.Admin.Api
             services.AddScoped<ClientService>();
             services.AddScoped<IdentityResourceService>();
             services.AddScoped<ApiResourceService>();
+            services.AddScoped<DefaultStoreService>();
             services.AddMvc()
                 .AddJsonOptions(options =>
                 {

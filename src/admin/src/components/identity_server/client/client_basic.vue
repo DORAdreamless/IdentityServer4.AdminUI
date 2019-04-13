@@ -10,7 +10,12 @@
 
       <el-form-item label="协议类型：" prop="ProtocolType">
         <el-select v-model="ClientModel.ProtocolType">
-          <el-option selected="selected" value="oidc" label="OpenID Connect">OpenID Connect</el-option>
+          <el-option
+            v-for="item in ClientModel.ProtocolTypes"
+            :key="item.value"
+            :value="item.value"
+            :label="item.label"
+          >{{item.label}}</el-option>
         </el-select>
       </el-form-item>
 
@@ -66,9 +71,10 @@
         <el-select v-model="ClientModel.AllowedGrantTypes" multiple style="width:100%;">
           <el-option
             v-for="item in ClientModel.AllowedGrantTypesItems"
-            :key="item"
-            :value="item"
-          >{{item}}</el-option>
+            :key="item.value"
+            :value="item.value"
+            :label="item.label"
+          >{{item.label}}</el-option>
         </el-select>
       </el-form-item>
 
@@ -107,7 +113,7 @@
           <el-table stripe size="mini " border :data="ClientProperties">
             <el-table-column prop="Key" label="属性名"></el-table-column>
             <el-table-column prop="Value" label="属性值"></el-table-column>
-         
+
             <el-table-column prop="Id" label="操作">
               <template slot-scope="scope">
                 <el-button
@@ -140,7 +146,7 @@
 import util from "../../../common/util";
 import {
   GetOneForEdit,
-  UpdateBasicClient
+  UpdateClientBasic
 } from "../../../api/identity_server/client";
 import ClientSecret from "./client_secret";
 import {
@@ -239,7 +245,7 @@ export default {
         }
         let params = Object.assign({}, that.ClientModel);
 
-        UpdateBasicClient(that.Id, params).then(function(result) {
+        UpdateClientBasic(that.Id, params).then(function(result) {
           if (result.success) {
             that.$emit("onSetup", 2);
           }
@@ -317,7 +323,7 @@ export default {
     }
   },
   mounted() {
-      this.Id = parseInt(this.$router.history.current.params["Id"]);
+    this.Id = parseInt(this.$router.history.current.params["Id"]);
     this.getClientById();
     this.getClientSecrets();
     this.getClientProperties();

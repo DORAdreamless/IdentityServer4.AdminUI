@@ -36,7 +36,7 @@
 <script>
 import util from "../../../common/util";
 import {
-  UpdateDeviceFlowClient,
+  UpdateClientDeviceFlow,
   GetOneForEdit
 } from "../../../api/identity_server/client";
 export default {
@@ -58,10 +58,13 @@ export default {
     onNextOk: function() {
       var that = this;
       var param = Object.assign({}, that.ClientModel);
-      UpdateDeviceFlowClient(that.Id, param).then(result => {
+      UpdateClientDeviceFlow(that.Id, param).then(result => {
         if (result.success) {
-          this.$notify.success("操作成功。");
+          //this.$notify.success("操作成功。");
           // this.$emit("onSetup", 5);
+          this.$router.push({
+            name:'IdentityServerClient'
+          })
         }
       });
     },

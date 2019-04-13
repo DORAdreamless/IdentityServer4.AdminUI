@@ -40,7 +40,7 @@
             :value="item.value"
             :label="item.label"
             :key="item.value"
-            v-for="item in options.AccessTokenTypeList"
+            v-for="item in ClientModel.AccessTokenTypes"
           >{{item.label}}</el-option>
         </el-select>
       </el-form-item>
@@ -87,7 +87,7 @@
             :value="item.value"
             :label="item.label"
             :key="item.value"
-            v-for="item in options.RefreshTokenUsageList"
+            v-for="item in ClientModel.RefreshTokenUsages"
           >{{item.label}}</el-option>
         </el-select>
       </el-form-item>
@@ -107,7 +107,7 @@
             :value="item.value"
             :label="item.label"
             :key="item.value"
-            v-for="item in options.RefreshTokenExpirationList"
+            v-for="item in ClientModel.RefreshTokenExpirations"
           >{{item.label}}</el-option>
         </el-select>
       </el-form-item>
@@ -236,7 +236,7 @@
 <script>
 import util from "../../../common/util";
 import {
-  UpdateTokenClient,
+  UpdateClientToken,
   GetOneForEdit
 } from "../../../api/identity_server/client";
 import {
@@ -271,11 +271,6 @@ export default {
       },
       dialogClaimVisible: false,
       ClientClaims: [],
-      options: {
-        AccessTokenTypeList:  [],
-        RefreshTokenUsageList:  [],
-        RefreshTokenExpirationList: []
-      },
       formModel: {
         AllowedCorsOrigin: ""
       },
@@ -345,7 +340,7 @@ export default {
         }
         let params = Object.assign({}, that.ClientModel);
 
-        UpdateTokenClient(that.Id, params).then(function(result) {
+        UpdateClientToken(that.Id, params).then(function(result) {
           if (result.success) {
             that.$emit("onSetup", 4);
           }

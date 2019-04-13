@@ -12,61 +12,61 @@ export const GetClientByPage = function (pageParam) {
 
 
 export const GetOneForEdit = function (Id) {
-    Id=Id||'';
+    Id = Id || '';
     return axios({
         url: `${base}/api/IdentityServer/Client/GetClient?Id=${Id}`,
         method: 'GET'
     })
 }
 
-export const CreateClient = function (param) {
+export const AddClient = function (param) {
     return axios({
-        url: `${base}/api/IdentityServer/Client/Put`,
+        url: `${base}/api/IdentityServer/Client/AddClient`,
         method: 'POST',
         data: param
     })
 }
 
 
-export const UpdateNameClient = function (Id, param) {
+export const UpdateClientName = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/Client/Name?Id=${Id}`,
+        url: `${base}/api/IdentityServer/Client/UpdateClientName?Id=${Id}`,
         method: 'POST',
         data: param
     })
 }
 
-export const UpdateBasicClient = function (Id, param) {
+export const UpdateClientBasic = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/Client/Basic?Id=${Id}`,
+        url: `${base}/api/IdentityServer/Client/UpdateClientBasic?Id=${Id}`,
         method: 'POST',
         data: param
     })
 }
-export const UpdateAuthoriztionClient = function (Id, param) {
+export const UpdateClientAuthorization = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/Client/Authoriztion?Id=${Id}`,
+        url: `${base}/api/IdentityServer/Client/UpdateClientAuthorization?Id=${Id}`,
         method: 'POST',
         data: param
     })
 }
-export const UpdateTokenClient = function (Id, param) {
+export const UpdateClientToken = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/Client/Token?Id=${Id}`,
+        url: `${base}/api/IdentityServer/Client/UpdateClientToken?Id=${Id}`,
         method: 'POST',
         data: param
     })
 }
-export const UpdateConsentClient = function (Id, param) {
+export const UpdateClientConsent = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/Client/Consent?Id=${Id}`,
+        url: `${base}/api/IdentityServer/Client/UpdateClientConsent?Id=${Id}`,
         method: 'POST',
         data: param
     })
 }
-export const UpdateDeviceFlowClient = function (Id, param) {
+export const UpdateClientDeviceFlow = function (Id, param) {
     return axios({
-        url: `${base}/api/IdentityServer/Client/DeviceFlow?Id=${Id}`,
+        url: `${base}/api/IdentityServer/Client/UpdateClientDeviceFlow?Id=${Id}`,
         method: 'POST',
         data: param
     })
@@ -74,7 +74,7 @@ export const UpdateDeviceFlowClient = function (Id, param) {
 
 export const DeleteClient = function (Id) {
     return axios({
-        url: `${base}/api/IdentityServer/Client/Delete?Id=${Id}`,
+        url: `${base}/api/IdentityServer/Client/DeleteClient?Id=${Id}`,
         method: 'POST'
     })
 }

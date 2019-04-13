@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using IdentityServer4.Admin.Api.Enums;
 using IdentityServer4.Admin.Api.Helpers;
 using IdentityServer4.Admin.Api.Infrastructure.UI;
@@ -36,7 +37,11 @@ namespace IdentityServer4.Admin.Api.Dtos.Configuration
 
             RefreshTokenExpirations = new List<SelectItem>();
             RefreshTokenExpirations.AddRange(EnumHelpers.ToSelectList<TokenExpiration>());
-         
+
+            AllowedGrantTypesItems = new List<SelectItem>();
+            AllowedGrantTypesItems.AddRange(Dtos.Constants.ClientConsts.GetGrantTypes().Select(x=>new SelectItem(x,x)));
+
+
         }
 
         public List<SelectItem> ClientTypeList { get; set; }
@@ -76,7 +81,6 @@ namespace IdentityServer4.Admin.Api.Dtos.Configuration
 
         public bool Enabled { get; set; } = true;
         public bool EnableLocalLogin { get; set; } = true;
-        public int Id { get; set; }
         public int IdentityTokenLifetime { get; set; } = 300;
         public bool IncludeJwtId { get; set; }
         public string LogoUri { get; set; }
@@ -115,7 +119,7 @@ namespace IdentityServer4.Admin.Api.Dtos.Configuration
         public string AllowedCorsOriginsItems { get; set; }
 
         public List<string> AllowedGrantTypes { get; set; }
-        public string AllowedGrantTypesItems { get; set; }
+        public List<SelectItem> AllowedGrantTypesItems { get; set; }
 
         public List<string> AllowedScopes { get; set; }
         public string AllowedScopesItems { get; set; }
@@ -132,5 +136,20 @@ namespace IdentityServer4.Admin.Api.Dtos.Configuration
         public int DeviceCodeLifetime { get; set; } = 300;
 
         public bool NonEditable { get; set; }
+    }
+
+    public class ClientListDto
+    {
+        public string ClientId { get; set; }
+        public string ClientName { get; set; }
+
+        public string ClientUri { get; set; }
+
+        public string Description { get; set; }
+
+        public bool Enabled { get; set; } = true;
+        public bool EnableLocalLogin { get; set; } = true;
+        public int Id { get; set; }
+        public string LogoUri { get; set; }
     }
 }
